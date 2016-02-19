@@ -1,0 +1,31 @@
+{
+  "name": "pixelpercolation",
+  "version": "0.0.0",
+  "description": "A fresh, new Sigma app.",
+  "license": "",
+  "repository":{
+      "type" : "git",
+      "url"  : ""
+    },
+  "dependencies": {
+  	 "gulp": "*",
+  	"gulp-autoprefixer": "*",
+    "gulp-jshint": "*",
+    "jshint-stylish": "*",
+    "jshint":"*",
+    "gulp-ruby-sass": "*",
+    "gulp-util": "*",
+    "gulp-uglify": "*",
+    "gulp-concat": "*",
+    "browser-sync": "*",
+    "es6-promise":"*",
+    "jquery": "*",
+    "gulp-swig": "*"
+  },
+  "devDependencies": {
+    "del": "*"
+  },
+  "jshintConfig": {
+    "node": true
+  }
+}
