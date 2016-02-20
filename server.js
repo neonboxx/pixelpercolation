@@ -1,12 +1,12 @@
 var express = require('express');
-var serveStatic = require('serve-static')
-
 var app = express();
 
-var oneDay = 86400000;
+//Specify a port
+var port = process.env.port || 8080;
 
-app.use(express.compress());
+//Serve up files in public folder
+app.use('/', express.static(__dirname + '/dist'));
 
-app.use(serveStatic( '/dist', { maxAge: oneDay }));
-
-app.listen(8080);
+//Start up the website
+app.listen(port);
+console.log('Listening on port: ', port);

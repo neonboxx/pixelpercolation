@@ -9,7 +9,7 @@
     },
   "dependencies": {
   	 "express":"*",
-       "serve-static":"*"
+     "serve-static":"*"
   },
   "devDependencies": {
     "del": "*",
