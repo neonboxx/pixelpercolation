@@ -8,7 +8,7 @@
       "url"  : ""
     },
   "dependencies": {
-  	 "gulp": "*",
+    "gulp": "*",
   	"gulp-autoprefixer": "*",
     "gulp-jshint": "*",
     "jshint-stylish": "*",
