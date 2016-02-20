@@ -8,6 +8,10 @@
       "url"  : ""
     },
   "dependencies": {
+  	 "express":"*"
+  },
+  "devDependencies": {
+    "del": "*",
     "gulp": "*",
   	"gulp-autoprefixer": "*",
     "gulp-jshint": "*",
@@ -21,9 +25,6 @@
     "es6-promise":"*",
     "jquery": "*",
     "gulp-swig": "*"
-  },
-  "devDependencies": {
-    "del": "*"
   },
   "jshintConfig": {
     "node": true
