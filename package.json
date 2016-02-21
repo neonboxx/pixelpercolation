@@ -1,6 +1,7 @@
 {
   "name": "pixelpercolation",
   "version": "0.0.0",
+  "engines":{"node":"5.6.0"},
   "description": "A fresh, new Sigma app.",
   "license": "",
   "repository":{
