@@ -9,8 +9,6 @@
       "url"  : ""
     },
   "dependencies": {
-  	 "express":"*",
-     "serve-static":"*"
   },
   "devDependencies": {
     "del": "*",
