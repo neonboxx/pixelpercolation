@@ -28,6 +28,9 @@
     "jquery": "*",
     "gulp-swig": "*"
   },
+  "scripts": {
+    "start": "node server"
+  }, 
   "jshintConfig": {
     "node": true
   }
