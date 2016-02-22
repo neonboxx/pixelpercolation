@@ -1,134 +1,137 @@
-.team-grid {
-	padding: 20px 20px 100px 20px;
-	max-width: 1300px;
-	margin: 0 auto;
-	list-style: none;
+
+.grid {
+    width: 100%;
+    @include outer-container;
+}
+
+/* Common style */
+.grid figure {
+    @include span-columns(4);
+	position: relative;
+	overflow: hidden;
+	height: auto;
+	background: #3085a3;
 	text-align: center;
+	cursor: pointer;
 }
 
-.team-grid li {
-	display: inline-block;
-	width: 440px;
-	margin: 0;
-	padding: 20px;
-	text-align: left;
+.grid figure img {
 	position: relative;
-}
-
-.team-grid figure {
-	margin: 0;
-	position: relative;
-}
-
-.team-grid figure img {
-	max-width: 100%;
 	display: block;
-	position: relative;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
 }
 
-.team-grid figcaption {
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 20px;
-	background: #2c3f52;
-	color: #ed4e6e;
-}
-
-.team-grid figcaption h3 {
-	margin: 0;
-	padding: 0;
-	color: #fff;
-}
-
-.team-grid figcaption span:before {
-	content: 'by ';
-}
-
-.team-grid figcaption a {
-	text-align: center;
-	padding: 5px 10px;
-	border-radius: 2px;
-	display: inline-block;
-	background: #ed4e6e;
-	color: #fff;
-}
-/* Caption Style 4 */
-.cs-style-4 li {
-	-webkit-perspective: 1700px;
-	-moz-perspective: 1700px;
-	perspective: 1700px;
-	-webkit-perspective-origin: 0 50%;
-	-moz-perspective-origin: 0 50%;
-	perspective-origin: 0 50%;
-}
-
-.cs-style-4 figure {
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-}
-
-.cs-style-4 figure > div {
-	overflow: hidden;
-}
-
-.cs-style-4 figure img {
-	-webkit-transition: -webkit-transform 0.4s;
-	-moz-transition: -moz-transform 0.4s;
-	transition: transform 0.4s;
-}
-
-.no-touch .cs-style-4 figure:hover img,
-.cs-style-4 figure.cs-hover img {
-	-webkit-transform: translateX(25%);
-	-moz-transform: translateX(25%);
-	-ms-transform: translateX(25%);
-	transform: translateX(25%);
-}
-
-.cs-style-4 figcaption {
+	width: 100%;
 	height: 100%;
-	width: 50%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
 	opacity: 0;
-	-webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-webkit-transform-origin: 0 0;
-	-moz-transform-origin: 0 0;
-	transform-origin: 0 0;
-	-webkit-transform: rotateY(-90deg);
-	-moz-transform: rotateY(-90deg);
-	transform: rotateY(-90deg);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
-	transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-.no-touch .cs-style-4 figure:hover figcaption,
-.cs-style-4 figure.cs-hover figcaption {
-	opacity: 1;
-	-webkit-transform: rotateY(0deg);
-	-moz-transform: rotateY(0deg);
-	transform: rotateY(0deg);
-	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
-	transition: transform 0.4s, opacity 0.1s;
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
 }
 
-.cs-style-4 figcaption a {
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+/*---------------*/
+/***** Duke *****/
+/*---------------*/
+
+figure.effect-duke {
+	background: -webkit-linear-gradient(-45deg, #34495e 0%,#cc6055 100%);
+	background: linear-gradient(-45deg, #34495e 0%,#cc6055 100%);
+}
+
+figure.effect-duke img,
+figure.effect-duke p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-duke:hover img {
+	opacity: 0.1;
+	-webkit-transform: scale3d(2,2,1);
+	transform: scale3d(2,2,1);
+}
+
+figure.effect-duke h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: scale3d(0.8,0.8,1);
+	transform: scale3d(0.8,0.8,1);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
+
+figure.effect-duke p {
 	position: absolute;
-	bottom: 20px;
-	right: 20px;
+	bottom: 0;
+	left: 0;
+	margin: 20px;
+	padding: 30px;
+	border: 2px solid #fff;
+	text-transform: none;
+	font-size: 90%;
+	opacity: 0;
+	-webkit-transform: scale3d(0.8,0.8,1);
+	transform: scale3d(0.8,0.8,1);
+	-webkit-transform-origin: 50% -100%;
+	transform-origin: 50% -100%;
 }
 
+figure.effect-duke:hover h2,
+figure.effect-duke:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
 
-@media screen and (max-width: 31.5em) {
-	.team-grid {
-		padding: 10px 10px 100px 10px;
+/* Media queries */
+@media screen and (max-width: 50em) {
+	.content {
+		text-align: center;
 	}
-	.team-grid li {
-		width: 100%;
-		min-width: 300px;
+	.grid figure {
+        @include span-columns(8);
+        @include shift(2);
 	}
 }

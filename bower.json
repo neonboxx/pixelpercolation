@@ -5,6 +5,7 @@
     "neat": "1.7.1",
     "bourbon": "^4.2.6",
     "fontawesome": "~4.3.0",
-    "classie": "^1.0.1"
+    "classie": "^1.0.1",
+    "jquery": "^2.2.0"
   }
 }

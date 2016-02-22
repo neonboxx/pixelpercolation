@@ -5,6 +5,10 @@ html{
 
 body{
   @include font-size(14);
+  background: #595959;
   margin:0;
   font-family: 'Open Sans', sans-serif;
+}
+figure{
+margin: 1em 0;   
 }

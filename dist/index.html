@@ -30,65 +30,111 @@
 		<div class="main" id="main" role="main">
 	  	
 	<div class="container-fluid">
-        <div class="hero-header" style="background-image:url('http://eskipaper.com/images/cityscape-10.jpg')">
-            <nav class="menu menu--viola">
-                <ul class="menu__list">
-                    <li class="menu__item menu__item--current"><a href="#hero" class="menu__link">Home</a></li>
-                    <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
-                    <li class="menu__item"><a href="#team" class="menu__link">Team</a></li>
-                    <li class="menu__item"><a href="#contact" class="menu__link">Contact</a></li>
-                </ul>
-            </nav>
+        <div id="main" class="section hero-header" style="background-image:url('http://eskipaper.com/images/cityscape-10.jpg')">
+        <div id="nav-wrapper">
+            <div id="header-logo"><img width="64px" style="margin-bottom:-10px" src="http://i.imgur.com/zyPKfqC.png"/>
+                <span><strong>Pixel</strong>Percolation</span></div>
+                <nav id="nav" class="menu menu--viola">
+                    <div class="menu__list">
+                        <span class="menu__item menu__item--current"><a href="#main" class="menu__link">Home</a></span>
+                        <span class="menu__item"><a href="#about" class="menu__link">About</a></span>
+                        <span class="menu__item"><a href="#team" class="menu__link">Team</a></span>
+                        <span class="menu__item"><a href="#contact" class="menu__link">Contact</a></span>
+                    </div>
+                    <div style="clear:both;"></div>
+                </nav>
+            </div>
             <p class="title section__title"/>
                 <img width="64px" style="margin-bottom:-10px" src="http://i.imgur.com/zyPKfqC.png"/>
                 <strong>Pixel</strong>Percolation
             </p>
         </div>
-        <div id="about" class="row">
+        <div id="about" class="section row">
+            <div class="content-block-wrapper">
+                <div class="content-block">
+                    <div class="title">
+                        <h2>Pixel Percolation --><h2>
+                    </div>  
+                    <div class="content">
+                        At Pixel Percolation, we believe in the creating the perfect user experience to support your business. We take take time to fully understand your business and our team will work with you from concept to completion.
+                    </div>    
+                </div>
+                 <div class="content-block">
+                    <div class="content">
+                        With the majority of web traffic now being sourced from mobiles and tablets, every site is optimised for the mobile web. Using a responsive design we will deliver a seamless experience across all devices.
+                    </div>  
+                    <div class="title">
+                        <h2><-- Responsive</h2>
+                    </div>    
+                </div>
+                 <div class="content-block">
+                    <div class="title">
+                        <h2>UX/UI Design --></h2>
+                    </div>  
+                    <div class="content">
+                       All great solutions require an engaging partnership. We build your vision together. Through planning sessions and interviews we will deliver the perfect customer experience. There is no 'Us' and 'You', we work together throughout the project.
+
+                    </div>    
+                </div>
+                <div class="content-block"> 
+                    
+                    <div class="content">
+                      The quality of our products is one of the most important parts of our development process. All our products are overseen by the QA team from start to finish and we will only deliver work that we’re 100% happy to leave the studio and put our name on.
+
+                    </div>  
+                     <div class="title">
+                        <h2><-- Quality</h2>
+                    </div>   
+                </div>
+            </div>
             
+             
         </div>
-        <div id="team" class="row">
-            <div  class="col-xs-4">
-                <ul class="grid cs-style-1">
-                    <li>
-                        <figure>
-                            <img src="images/1.png" alt="img01">
-                            <figcaption>
-                                <h3>Camera</h3>
-                                <span>Jacob Cummings</span>
-                                <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </div>
-           <div  class="col-xs-4">
-                <div class="row">
-                    The Maker
-                </div>
-                <div class="row">
-                    <img src="/assets/img/creator.png"/>
-                </div>
-                <div class="row">
-                    Bio
-                </div>
-            </div>
-            <div  class="col-xs-4">
-                <div class="row">
-                    The Breaker
-                </div>
-                <div class="row">
-                    <img src="/assets/img/creator.png"/>
-                </div>
-                <div class="row">
-                    Bio
-                </div>
+        <div id="team" class="section row">
+            <div class="grid">
+                <figure class="effect-duke">
+                    <img src="/assets/img/27.jpg" alt="img27"/>
+                    <figcaption>
+                        <h2>The <span>Creator</span></h2>
+                        <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+                        <!--<a href="#">View more</a>-->
+                    </figcaption>			
+                </figure>
+                <figure class="effect-duke">
+                    <img src="/assets/img/27.jpg" alt="img27"/>
+                    <figcaption>
+                        <h2>The <span>Maker</span></h2>
+                        <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+                        <!--<a href="#">View more</a>-->
+                    </figcaption>			
+                </figure>
+                <figure class="effect-duke">
+                    <img src="/assets/img/27.jpg" alt="img27"/>
+                    <figcaption>
+                        <h2>The <span>Breaker</span></h2>
+                        <p>Duke is very bored. When he looks at the sky, he feels to run.</p>
+                        <!--<a href="#">View more</a>-->
+                    </figcaption>			
+                </figure>
             </div>
         </div>
-        <div class="hero" style="background-image:url('/assets/img/hero2.jpg')">
+        <div id="contact" class="hero section" style="background-image:url('/assets/img/hero2.jpg'); 
+    padding: 3em;">
             <div class="col-xs-12">
-                <div id="contact">
-                </div>
+                <form id="contact-form">
+                    <div class="container">
+                        <div class="head">
+                            <h2>Want a website?</h2>
+                        </div>
+                        <input type="text" name="name" placeholder="Name" /><br />
+                        <input  type="email" name="email" placeholder="Email" /><br />
+                        <textarea type="text" name="message" placeholder="Message"></textarea><br />
+                        <div class="message">Message Sent</div>
+                            <button id="submit" type="submit">
+                            Send <i class="fa fa-paper-plane-o"></i>
+                        </button>
+                    </div>
+                </form>
             </div> 
         </div>
     </div>
@@ -96,6 +142,8 @@
 		</div>
 
 		<footer class="footer" id="footer">
+            <h1>footer</h1>
+            <h2>footer</h2>
 		</footer>
 
 	</body>

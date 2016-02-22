@@ -1,0 +1,16 @@
+.content-block-wrapper{
+    @include outer-container;
+    .content-block{
+        text-align: center;
+        div{
+            padding: 1em;
+            @include span-columns(6);
+        }
+        .title{
+            color: white;
+        }
+        .content{
+            
+        }
+    }
+}
