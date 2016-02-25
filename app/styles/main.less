@@ -1,0 +1,123 @@
+@import "../bower_components/bootstrap/less/bootstrap.less";
+@icon-font-path: "../fonts/glyphicons/";
+
+@import "../bower_components/font-awesome/less/font-awesome.less";
+@fa-font-path: "../fonts/font-awesome";
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+
+
+@accent: #ffcc00;
+@hero:'/images/hero-header.jpg';
+@hero2:'/images/hero-office.jpg';
+@section-back-colour:#323A46;
+@section-colour:#fff;
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+	top: 0;
+	margin: 0;
+}
+h1{
+      text-align: center;
+      margin-bottom: 1em;
+}
+#team{
+  background:#fff;
+  color: #000;
+}
+
+.row{
+    position: relative;
+  background:@section-back-colour;
+  color:@section-colour;
+  height: 100%;
+  
+  .centered{
+      position: absolute;
+      top:50%;
+      transform: translateY(-50%);
+  }
+  &.row-hero{
+    background-image: url(@hero2);
+    background-size: cover;
+    background-attachment:fixed;
+  }
+}
+.social-buttons{
+    position: absolute;
+    bottom: 0;
+}
+.wrapper{
+  height: 100%;
+  padding-left:15px;
+  padding-right: 15px;  
+}
+.hero {
+  color:#fff;
+  text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.6);
+	background: #333;
+	background-image: url(@hero);
+	background-size: cover;
+    background-attachment:fixed;
+	margin: 0;
+	padding: 0;
+  .hero-wrapper {
+    text-align: center;
+    max-width: 900px;
+    margin: 0px auto;
+    text-align: left;
+    margin: 0 0 0 15%;
+    padding-top: 15%;
+    .hero-logo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: inline-block;
+      border: 10px solid white;
+      position: absolute;
+      margin-top: 15px;
+
+      background-image: url('http://i/.imgur.com/zyPKfqC.png');
+      background-size: contain;
+    }
+    h1 {
+        text-align: left;
+      font-size: 5em;
+      font-weight: 100;
+      line-height: 1;
+      margin: 0 0 30px 200px;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      font-weight: 100;
+      margin: 0 0 0 200px;
+    }
+  }
+}
+.menu {
+	line-height: 1;
+    margin-top:1em;
+	
+	ul {
+		list-style: none;
+		
+		li {
+            .make-xs-column(3);
+			display: inline-block;
+			cursor: pointer;
+			padding: 20px 30px;
+			&.menu-item-current {
+				border: 2px solid @accent;
+				color: @accent;
+			}
+		}
+	}
+}

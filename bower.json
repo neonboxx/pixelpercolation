@@ -1,11 +1,12 @@
 {
-  "name": "package",
+  "name": "pixelpercolation",
   "version": "0.0.0",
   "dependencies": {
-    "neat": "1.7.1",
-    "bourbon": "^4.2.6",
-    "fontawesome": "~4.3.0",
-    "classie": "^1.0.1",
-    "jquery": "^2.2.0"
-  }
+    "bootstrap": "~3.0.0",
+    "font-awesome": "~4.0.0",
+    "modernizr": "~2.6.2",
+    "jquery": "~1.9.1"
+  },
+  "devDependencies": {}
 }
+
