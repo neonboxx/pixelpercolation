@@ -7309,8 +7309,10 @@ h1 {
   margin-bottom: 1em;
 }
 #team {
-  background: #fff;
-  color: #000;
+  background: #333;
+  background: url('/images/coffee.jpg');
+  background-size: cover;
+  color: #fff;
 }
 .row {
   position: relative;
@@ -7323,14 +7325,18 @@ h1 {
   top: 50%;
   transform: translateY(-50%);
 }
+.row.row-hero-2 {
+  background-image: url('/images/coffee.jpg');
+}
 .row.row-hero {
   background-image: url('/images/hero-office.jpg');
   background-size: cover;
-  background-attachment: fixed;
 }
 .social-buttons {
   position: absolute;
+  margin-right: 15px;
   bottom: 0;
+  right: 0;
 }
 .wrapper {
   height: 100%;
@@ -7380,6 +7386,8 @@ h1 {
 .menu {
   line-height: 1;
   margin-top: 1em;
+  top: 0;
+  position: absolute;
 }
 .menu ul {
   list-style: none;
@@ -7391,26 +7399,37 @@ h1 {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  color: #fff;
   display: inline-block;
   cursor: pointer;
   padding: 20px 30px;
 }
-.menu ul li.menu-item-current {
+.menu ul li.active {
   border: 2px solid #ffcc00;
   color: #ffcc00;
 }
+.menu ul li a {
+  color: #fff;
+}
 #contact {
   background: #1E2832;
+  background-size: cover;
 }
 #contact .form-control {
   background: #29323C;
   color: #fff;
-  padding: 24px;
 }
-#contact #email-col {
-  padding-left: 7.5px;
+@media (max-width: 768px) {
+  #contact #name-col {
+    padding-bottom: 15px;
+  }
 }
-#contact #name-col {
-  padding-right: 7.5px;
+@media (min-width: 768px) {
+  #contact #email-col {
+    padding-left: 7.5px;
+  }
+  #contact #name-col {
+    padding-right: 7.5px;
+  }
 }
 /*# sourceMappingURL=/styles/main.css.map */

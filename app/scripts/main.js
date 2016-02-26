@@ -1,3 +1,9 @@
+'use strict';
 jQuery(function($) {
-   // $('.wrapper').fullpage();
+    $('#fullpage').fullpage(
+        {
+            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+            menu:'.menu'
+        }
+    );
 });
