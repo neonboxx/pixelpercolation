@@ -1,1 +1,3 @@
-console.log('\'Allo \'Allo!');
+jQuery(function($) {
+   // $('.wrapper').fullpage();
+});

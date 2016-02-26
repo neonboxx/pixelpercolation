@@ -16,7 +16,8 @@
     <!-- endbuild -->
   </head>
   <body>
-      <div class="hero row">
+      <div class="wrapper container-fluid">
+      <section class="hero row">
         <div class="menu col-md-6 col-md-offset-6">
             <ul>
                 <li class="menu-item-current">Lorem</li>
@@ -31,9 +32,8 @@
             <h1><strong>Lorem</strong> ipsum</h1>
             <h2>Dolor sit amet, consectetur adipisicing elit. Qui doloremque nesciunt beatae illo, officiis odit, autem itaque voluptatibus.</h2>
         </div>
-        </div>
-        <div class="wrapper container-fluid">
-        <div id="about" class="row">
+      </section>
+        <section id="about" class="row">
             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >
                     <div class="col-sm-4">
                         <p class="hidden-xs" style="text-align:center"><img src="http://placehold.it/150x150" alt=""></p>
@@ -51,10 +51,10 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et justo ac mauris iaculis semper. Fusce nec tincidunt dui. Curabitur nibh purus, tristique non neque ac, scelerisque ultricies massa. Praesent varius purus quis elit rutrum rutrum. Pellentesque massa purus, ultrices vel volutpat ac, tristique et tortor. Etiam nunc massa, sagittis quis ultricies nec, viverra a lorem. Nam non aliquam dui. Proin vulputate luctus purus. Suspendisse a massa sed justo bibendum porta dignissim eget sem</p>
                     </div>
             </div>
-        </div>
-        <div id="portfolio" class="row row-hero">
-        </div>
-        <div id="team" class="row">
+        </section>
+        <section id="portfolio" class="row row-hero">
+        </section>
+        <section id="team" class="row">
             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >
                 <div class="col-sm-12">
                     <h1>The Team</h1>
@@ -72,23 +72,23 @@
                             <p>
                 </div>
             </div>
-        </div>
-        <div id="contact" class="row">
+        </section>
+        <section id="contact" class="row">
             <div class="col-xs-12 col-md-10 col-md-offset-1 centered">
                 <div class="col-sm-12">
                     <h1>What you saying?</h1>
                 </div>
                 <form class="form-horizontal">
                     <div class="form-group col-xs-12">
-                        <div class="col-sm-5 col-sm-offset-1">
+                        <div id="name-col" class="col-sm-4 col-sm-offset-2">
                             <input type="text" class="form-control" id="inputName" placeholder="Name">
                         </div>
-                        <div class="col-sm-5">
+                        <div id="email-col" class="col-sm-4">
                             <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                         </div>
                     </div>
                     <div class="form-group  col-xs-12">
-                        <div class="col-sm-10 col-sm-offset-1">
+                        <div class="col-sm-8 col-sm-offset-2">
                             <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
                         </div>
                     </div>
@@ -103,7 +103,7 @@
                 <h2 style="text-align:right">Social Buttons</h2>
             </div>
         </div>
-    </div>
+    </section>
 
 
     <!--[if lt IE 7]>
@@ -123,6 +123,7 @@
 
         <!-- build:js scripts/main.js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/fullpage.js/jquery.fullpage.min.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/hello.js"></script>
         <!-- endbuild -->

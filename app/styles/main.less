@@ -38,7 +38,7 @@ h1{
   background:@section-back-colour;
   color:@section-colour;
   height: 100%;
-  
+
   .centered{
       position: absolute;
       top:50%;
@@ -57,7 +57,7 @@ h1{
 .wrapper{
   height: 100%;
   padding-left:15px;
-  padding-right: 15px;  
+  padding-right: 15px;
 }
 .hero {
   color:#fff;
@@ -66,7 +66,6 @@ h1{
 	background-image: url(@hero);
 	background-size: cover;
     background-attachment:fixed;
-	margin: 0;
 	padding: 0;
   .hero-wrapper {
     text-align: center;
@@ -84,11 +83,11 @@ h1{
       position: absolute;
       margin-top: 15px;
 
-      background-image: url('http://i/.imgur.com/zyPKfqC.png');
+      background-image: url('/images/percolator-icon.png');
       background-size: contain;
     }
     h1 {
-        text-align: left;
+      text-align: left;
       font-size: 5em;
       font-weight: 100;
       line-height: 1;
@@ -105,10 +104,10 @@ h1{
 .menu {
 	line-height: 1;
     margin-top:1em;
-	
+
 	ul {
 		list-style: none;
-		
+
 		li {
             .make-xs-column(3);
 			display: inline-block;
@@ -120,4 +119,19 @@ h1{
 			}
 		}
 	}
+}
+#contact{
+    background: #1E2832;
+    .form-control{
+        background: #29323C;
+        color: #fff;
+        padding:24px;
+    }
+    #email-col{
+        padding-left: 7.5px;
+    }
+    #name-col{
+        padding-right: 7.5px;
+    }
+
 }

@@ -7344,7 +7344,6 @@ h1 {
   background-image: url('/images/hero-header.jpg');
   background-size: cover;
   background-attachment: fixed;
-  margin: 0;
   padding: 0;
 }
 .hero .hero-wrapper {
@@ -7363,7 +7362,7 @@ h1 {
   border: 10px solid white;
   position: absolute;
   margin-top: 15px;
-  background-image: url('http://i/.imgur.com/zyPKfqC.png');
+  background-image: url('/images/percolator-icon.png');
   background-size: contain;
 }
 .hero .hero-wrapper h1 {
@@ -7399,5 +7398,19 @@ h1 {
 .menu ul li.menu-item-current {
   border: 2px solid #ffcc00;
   color: #ffcc00;
+}
+#contact {
+  background: #1E2832;
+}
+#contact .form-control {
+  background: #29323C;
+  color: #fff;
+  padding: 24px;
+}
+#contact #email-col {
+  padding-left: 7.5px;
+}
+#contact #name-col {
+  padding-right: 7.5px;
 }
 /*# sourceMappingURL=/styles/main.css.map */
