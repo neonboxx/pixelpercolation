@@ -6,7 +6,7 @@
 
 
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800,700,300);
 
 
 @accent: #ffcc00;
@@ -15,19 +15,11 @@
 @hero3:'/images/coffee.jpg';
 @section-back-colour:#323A46;
 @section-colour:#fff;
-html {
-	height: 100%;
-}
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	height: 100%;
+	font-family: 'Raleway', sans-serif;
 	top: 0;
 	margin: 0;
-}
-h1{
-      text-align: center;
-      margin-bottom: 1em;
 }
 #team{
   background:#333;
@@ -37,11 +29,12 @@ h1{
 }
 
 .row{
-    position: relative;
+  position: relative;
   background:@section-back-colour;
   color:@section-colour;
-  height: 100%;
-
+  h1,h2{
+      text-align: center;
+    }
   .centered{
       position: absolute;
       top:50%;
@@ -57,12 +50,10 @@ h1{
 }
 .social-buttons{
     position: absolute;
-    margin-right: 15px;
+    text-align: center;
     bottom: 0;
-    right: 0;
 }
 .wrapper{
-  height: 100%;
   padding-left:15px;
   padding-right: 15px;
 }
@@ -86,10 +77,8 @@ h1{
       height: 150px;
       border-radius: 50%;
       display: inline-block;
-      border: 10px solid white;
       position: absolute;
       margin-top: 15px;
-
       background-image: url('/images/percolator-icon.png');
       background-size: contain;
     }
@@ -112,16 +101,17 @@ h1{
 	line-height: 1;
     margin-top:1em;
     top:0;
-    position: absolute;
+    position: fixed;
 	ul {
 		list-style: none;
 
 		li {
             .make-xs-column(3);
+            text-align: center;
             color: #fff;
 			display: inline-block;
 			cursor: pointer;
-			padding: 20px 30px;
+			padding: 10px 20px;
 			&.active {
 				border: 2px solid @accent;
 				color: @accent;
@@ -154,5 +144,14 @@ h1{
             padding-right: 7.5px;
         }
     }
-
+}
+button{
+    width:100%;
+    border-radius: 16px !important;
+}
+#submit-button{
+    padding-left: 7.5px;
+}
+#clear-button{
+    padding-right: 7.5px;
 }

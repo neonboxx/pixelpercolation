@@ -3,7 +3,8 @@ jQuery(function($) {
     $('#fullpage').fullpage(
         {
             anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-            menu:'.menu'
+            menu:'.menu',
+            scrollBar: true
         }
     );
 });
