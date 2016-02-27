@@ -2,7 +2,7 @@
 jQuery(function($) {
     $('#fullpage').fullpage(
         {
-            anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+            anchors: ['home', 'about', 'portfolio', 'team', 'contact'],
             menu:'.menu',
             scrollBar: true
         }

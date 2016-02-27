@@ -17,23 +17,23 @@
   </head>
   <body>
       <div id="fullpage">
-           <div class="menu col-md-6 col-md-offset-6 col-sm-12">
+           <div class="menu col-md-6 col-md-offset-6 col-xs-12">
             <ul id="myMenu">
-                <!--<li data-menuanchor="firstPage" class="active"><a href="#firstPage">First section</a></li>-->
-                <li data-menuanchor="secondPage"><a href="#secondPage">Second section</a></li>
-                <li data-menuanchor="thirdPage"><a href="#thirdPage">Third section</a></li>
-                <li data-menuanchor="fourthPage"><a href="#fourthPage">Fourth section</a></li>
-                <li data-menuanchor="lastPage"><a href="#lastPage">Fifth section</a></li>
+                <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+                <li data-menuanchor="about"><a href="#about">About</a></li>
+                <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a></li>
+                <li data-menuanchor="team"><a href="#team">Team</a></li>
+                <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
             </ul>
         </div>
       <div class="hero section row">
         <div class="hero-wrapper">
             <div class="hero-logo"></div>
-            <h1><strong>Lorem</strong> ipsum</h1>
+            <h1><strong>Pixel</strong>Percolation</h1>
             <h2>Dolor sit amet, consectetur adipisicing elit. Qui doloremque nesciunt beatae illo, officiis odit, autem itaque voluptatibus.</h2>
         </div>
       </div>
-        <div id="about" class="section row">
+        <div class="section about row">
             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >
                     <div class="col-sm-4">
                         <p class="hidden-xs" style="text-align:center"><img src="http://placehold.it/150x150" alt=""></p>
@@ -52,9 +52,9 @@
                     </div>
             </div>
         </div>
-        <div id="portfolio" class="row-hero section row">
+        <div class="row-hero portfolio section row">
         </div>
-        <div id="team" class="section row">
+        <div class="section team row">
             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >
                 <div class="col-sm-12">
                     <h1>The Team</h1>
@@ -73,13 +73,13 @@
                 </div>
             </div>
         </div>
-        <div id="contact" class="section row row-hero row-hero-2">
+        <div class="section contact row">
             <div class="col-xs-12 col-md-10 col-md-offset-1 centered">
                 <div class="col-sm-12">
                     <h1>What you saying?</h1>
                     <h2>We would like to hear it!</h2>
                 </div>
-                <form class="form-horizontal">
+                <form class="form">
                     <div class="form-group col-xs-12">
                         <div id="name-col" class="col-sm-4 col-sm-offset-2">
                             <input type="text" class="form-control" id="inputName" placeholder="Name">
@@ -93,11 +93,11 @@
                             <textarea class="form-control" id="inputMessage" placeholder="Message" rows="6"></textarea>
                         </div>
                     </div>
-                    <div class="form-group  col-xs-12">
-                        <div id="clear-button" class="col-xs-6 col-sm-4 col-sm-offset-2">
+                    <div class="form-group  col-xs-12 col-sm-4 col-sm-offset-4">
+                        <div id="clear-button" class="col-xs-6">
                             <button class="btn btn-default">Clear</button>
                         </div>
-                        <div id="submit-button" class="col-xs-6 col-sm-4">
+                        <div id="submit-button" class="col-xs-6">
                             <button type="submit" class="btn btn-default">Send</button>
                         </div>
                     </div>
@@ -105,13 +105,12 @@
             </div>
             <div class="col-xs-12 social-buttons">
                 <footer>
-                    <p> <a href="mailto:hello@pixelperfection.com">hello@pixelperfection.com</a></p>
-                    <p>2016 Pixel Percolation Limited. Registered in England No. 10024416</p>
-                    <h2>
+                    <h1>
                         <i class="fa fa-facebook-square"></i>
                         <i class="fa fa-twitter-square"></i>
                         <i class="fa fa-linkedin-square"></i>
-                    </h2>
+                    </h1>
+                    <p>2016 Pixel Percolation Limited. Registered in England No. 10024416  <a href="mailto:hello@pixelpercolation.com">hello@pixelpercolation.com</a></p>
                 </footer>
             </div>
     </div>
@@ -136,7 +135,6 @@
         <script src="bower_components/jquery/jquery.js"></script>
         <script src="bower_components/fullpage.js/jquery.fullpage.min.js"></script>
         <script src="scripts/main.js"></script>
-        <script src="scripts/hello.js"></script>
         <!-- endbuild -->
 </body>
 </html>

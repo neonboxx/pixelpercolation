@@ -16,14 +16,16 @@
 @section-back-colour:#323A46;
 @section-colour:#fff;
 
+@font-family-base:      'Raleway', sans-serif;
+
 body {
 	font-family: 'Raleway', sans-serif;
 	top: 0;
 	margin: 0;
 }
-#team{
+.team{
   background:#333;
-  background: url(@hero3);
+  //background: url(@hero3);
   background-size: cover; 
   color: #fff;
 }
@@ -40,15 +42,14 @@ body {
       top:50%;
       transform: translateY(-50%);
   }
-  &.row-hero-2{
-    background-image: url(@hero3);  
-  }
   &.row-hero{
     background-image: url(@hero2);
     background-size: cover;
+    background-attachment: fixed;
   }
 }
 .social-buttons{
+    border-top:solid 1px #fff;
     position: absolute;
     text-align: center;
     bottom: 0;
@@ -79,7 +80,7 @@ body {
       display: inline-block;
       position: absolute;
       margin-top: 15px;
-      background-image: url('/images/percolator-icon.png');
+      background-image: url('/images/percolator_icon_256.png');
       background-size: contain;
     }
     h1 {
@@ -106,7 +107,7 @@ body {
 		list-style: none;
 
 		li {
-            .make-xs-column(3);
+            .make-xs-column(2.4);
             text-align: center;
             color: #fff;
 			display: inline-block;
@@ -122,7 +123,7 @@ body {
 		}
 	}
 }
-#contact{
+.contact{
     background: #1E2832;
     background-size: cover;
     .form-control{
@@ -147,7 +148,8 @@ body {
 }
 button{
     width:100%;
-    border-radius: 16px !important;
+    border-radius: 21px !important;
+    padding:10px!important;
 }
 #submit-button{
     padding-left: 7.5px;
