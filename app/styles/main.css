@@ -7296,7 +7296,6 @@ td.visible-print {
   content: "\f196";
 }
 body {
-  font-family: 'Raleway', sans-serif;
   top: 0;
   margin: 0;
 }
@@ -7336,7 +7335,6 @@ body {
 }
 .hero {
   color: #fff;
-  text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.6);
   background: #333;
   background-image: url('/images/hero-header.jpg');
   background-size: cover;
@@ -7383,6 +7381,8 @@ body {
   list-style: none;
 }
 .menu ul li {
+  border: 10px solid rgba(0, 0, 0, 0);
+  transition: 0.5s ease;
   position: relative;
   float: left;
   width: 20%;
@@ -7393,11 +7393,12 @@ body {
   color: #fff;
   display: inline-block;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 0px 10px;
 }
 .menu ul li.active {
-  border: 2px solid #ffcc00;
+  border: 1px solid #ffcc00;
   color: #ffcc00;
+  padding: 10px 20px;
 }
 .menu ul li a {
   color: #fff;
