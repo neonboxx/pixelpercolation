@@ -16,6 +16,7 @@
     "grunt-contrib-less": "~0.11.4",
     "grunt-contrib-imagemin": "0.8.1",
     "grunt-contrib-watch": "~0.6.1",
+    "grunt-ejs":"*",
     "grunt-rev": "~0.1.0",
     "grunt-usemin": "~2.4.0",
     "grunt-mocha": "~0.4.11",

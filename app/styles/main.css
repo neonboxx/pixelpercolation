@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800,700,300);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200);
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 article,
 aside,
@@ -256,7 +256,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -338,7 +338,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -7295,6 +7295,21 @@ td.visible-print {
 .fa-plus-square-o:before {
   content: "\f196";
 }
+@font-face {
+  font-family: 'novecento_sans_widenormal';
+  src: url('../fonts/Novecentosanswide_Normal_webfont.woff');
+}
+@font-face {
+  font-family: 'Novecentosanswide-Light';
+  src: url('../fonts/Novecentosanswide_Light_webfont.woff');
+}
+h1 {
+  font-family: 'novecento_sans_widenormal', sans-serif;
+  text-transform: uppercase;
+}
+h2 {
+  padding-bottom: 1em;
+}
 body {
   top: 0;
   margin: 0;
@@ -7324,7 +7339,7 @@ body {
   background-attachment: fixed;
 }
 .social-buttons {
-  border-top: solid 1px #fff;
+  border-top: solid 1px #323A46;
   position: absolute;
   text-align: center;
   bottom: 0;
@@ -7344,32 +7359,28 @@ body {
 .hero .hero-wrapper {
   text-align: center;
   max-width: 900px;
-  margin: 0px auto;
-  text-align: left;
-  margin: 0 0 0 15%;
-  padding-top: 15%;
+  margin: auto;
+  padding-top: 10%;
 }
 .hero .hero-wrapper .hero-logo {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
   display: inline-block;
-  position: absolute;
   margin-top: 15px;
   background-image: url('/images/percolator_icon_256.png');
   background-size: contain;
 }
 .hero .hero-wrapper h1 {
-  text-align: left;
   font-size: 5em;
-  font-weight: 100;
+  font-family: Novecentosanswide-Light;
   line-height: 1;
-  margin: 0 0 30px 200px;
+}
+.hero .hero-wrapper h1 span {
+  font-family: novecento_sans_widenormal;
 }
 .hero .hero-wrapper h2 {
   font-size: 1.4em;
   font-weight: 100;
-  margin: 0 0 0 200px;
 }
 .menu {
   line-height: 1;
@@ -7434,5 +7445,13 @@ button {
 }
 #clear-button {
   padding-right: 7.5px;
+}
+#fullpage {
+  padding: 0 15px;
+}
+#contact .centered {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
 }
 /*# sourceMappingURL=/styles/main.css.map */

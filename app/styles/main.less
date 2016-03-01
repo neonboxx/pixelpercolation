@@ -3,11 +3,7 @@
 
 @import "../bower_components/font-awesome/less/font-awesome.less";
 @fa-font-path: "../fonts/font-awesome";
-
-
-
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800,700,300);
-
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200);
 
 @accent: #ffcc00;
 @hero:'/images/hero-header.jpg';
@@ -16,8 +12,27 @@
 @section-back-colour:#323A46;
 @section-colour:#fff;
 
-@font-family-base:      'Raleway', sans-serif;
+@font-face
+{
+    font-family: 'novecento_sans_widenormal';
+    src: url('../fonts/Novecentosanswide_Normal_webfont.woff');
+}
+@font-face
+{
+    font-family: 'Novecentosanswide-Light';
+    src: url('../fonts/Novecentosanswide_Light_webfont.woff');
+}
 
+
+@font-family-base:      'Work Sans', sans-serif;
+
+h1{
+    font-family: 'novecento_sans_widenormal', sans-serif;
+    text-transform: uppercase;
+}
+h2{
+    padding-bottom: 1em; 
+}
 body {
 	top: 0;
 	margin: 0;
@@ -47,7 +62,7 @@ body {
   }
 }
 .social-buttons{
-    border-top:solid 1px #fff;
+    border-top:solid 1px #323A46;
     position: absolute;
     text-align: center;
     bottom: 0;
@@ -66,32 +81,28 @@ body {
   .hero-wrapper {
     text-align: center;
     max-width: 900px;
-    margin: 0px auto;
-    text-align: left;
-    margin: 0 0 0 15%;
-    padding-top: 15%;
+    margin: auto;
+    padding-top: 10%;
     .hero-logo {
       width: 150px;
       height: 150px;
-      border-radius: 50%;
       display: inline-block;
-      position: absolute;
       margin-top: 15px;
       background-image: url('/images/percolator_icon_256.png');
       background-size: contain;
     }
     h1 {
-      text-align: left;
       font-size: 5em;
-      font-weight: 100;
+      font-family: Novecentosanswide-Light;
       line-height: 1;
-      margin: 0 0 30px 200px;
+      span{
+          font-family: novecento_sans_widenormal
+      }
     }
 
     h2 {
       font-size: 1.4em;
       font-weight: 100;
-      margin: 0 0 0 200px;
     }
   }
 }
@@ -156,4 +167,14 @@ button{
 }
 #clear-button{
     padding-right: 7.5px;
+}
+#fullpage{
+    padding: 0 15px;
+}
+#contact{
+    .centered{
+      position: absolute;
+      top:50%;
+      transform: translateY(-60%);
+    }
 }
