@@ -25,3 +25,4 @@ node_modules
 
 .tmp
 app/bower_components
+app/cache

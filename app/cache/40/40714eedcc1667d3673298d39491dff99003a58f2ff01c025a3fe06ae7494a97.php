@@ -26,7 +26,7 @@ class __TwigTemplate_49e6a7bf2cd08ea957a8918c228c38af09875028d5cc1f64fc334de9a85
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 3
-        $context["__internal_293964578e2521d655e4c6a36a94b258da5c874868710c529f03d22dffa5a536"] = $this->loadTemplate("_sub/_editable_record_list.twig", "overview/overview.twig", 3);
+        $context["__internal_6aa7fbae41023a9f6a50f0ddfdf41f7a0ef838d7fd6255e5ff84ce6fec94eb3e"] = $this->loadTemplate("_sub/_editable_record_list.twig", "overview/overview.twig", 3);
         // line 4
         $context["panels"] = $this->loadTemplate("_macro/_panels.twig", "overview/overview.twig", 4);
         // line 6
@@ -84,7 +84,7 @@ class __TwigTemplate_49e6a7bf2cd08ea957a8918c228c38af09875028d5cc1f64fc334de9a85
         echo "
             ";
         // line 29
-        echo $context["__internal_293964578e2521d655e4c6a36a94b258da5c874868710c529f03d22dffa5a536"]->geteditable_record_list($this->getAttribute((isset($context["context"]) ? $context["context"] : null), "contenttype", array()), $this->getAttribute((isset($context["context"]) ? $context["context"] : null), "multiplecontent", array()), $this->getAttribute((isset($context["context"]) ? $context["context"] : null), "permissions", array()), "table-striped");
+        echo $context["__internal_6aa7fbae41023a9f6a50f0ddfdf41f7a0ef838d7fd6255e5ff84ce6fec94eb3e"]->geteditable_record_list($this->getAttribute((isset($context["context"]) ? $context["context"] : null), "contenttype", array()), $this->getAttribute((isset($context["context"]) ? $context["context"] : null), "multiplecontent", array()), $this->getAttribute((isset($context["context"]) ? $context["context"] : null), "permissions", array()), "table-striped");
         echo "
 
         </div>

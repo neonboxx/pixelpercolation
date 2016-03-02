@@ -68,11 +68,11 @@ class __TwigTemplate_c1183d1b228728b4e1643781b96873215d5ec14ef209b96df320a03c3b1
     }
 
     // line 3
-    public function getuserlink($__user__ = null)
+    public function getuserlink($__user__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "user" => $__user__,
-            "varargs" => func_num_args() > 1 ? array_slice(func_get_args(), 1) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -100,13 +100,13 @@ class __TwigTemplate_c1183d1b228728b4e1643781b96873215d5ec14ef209b96df320a03c3b1
     }
 
     // line 9
-    public function getcontentlink_by_id($__contenttype__ = null, $__title__ = null, $__content_id__ = null)
+    public function getcontentlink_by_id($__contenttype__ = null, $__title__ = null, $__content_id__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "contenttype" => $__contenttype__,
             "title" => $__title__,
             "content_id" => $__content_id__,
-            "varargs" => func_num_args() > 3 ? array_slice(func_get_args(), 3) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -134,12 +134,12 @@ class __TwigTemplate_c1183d1b228728b4e1643781b96873215d5ec14ef209b96df320a03c3b1
     }
 
     // line 15
-    public function getcontentlink($__contenttype__ = null, $__content__ = null)
+    public function getcontentlink($__contenttype__ = null, $__content__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "contenttype" => $__contenttype__,
             "content" => $__content__,
-            "varargs" => func_num_args() > 2 ? array_slice(func_get_args(), 2) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -167,11 +167,11 @@ class __TwigTemplate_c1183d1b228728b4e1643781b96873215d5ec14ef209b96df320a03c3b1
     }
 
     // line 22
-    public function getdatetime($__d__ = null)
+    public function getdatetime($__d__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "d" => $__d__,
-            "varargs" => func_num_args() > 1 ? array_slice(func_get_args(), 1) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -195,11 +195,11 @@ class __TwigTemplate_c1183d1b228728b4e1643781b96873215d5ec14ef209b96df320a03c3b1
     }
 
     // line 25
-    public function getrequiredattr($__field__ = null)
+    public function getrequiredattr($__field__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "field" => $__field__,
-            "varargs" => func_num_args() > 1 ? array_slice(func_get_args(), 1) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -221,11 +221,11 @@ class __TwigTemplate_c1183d1b228728b4e1643781b96873215d5ec14ef209b96df320a03c3b1
     }
 
     // line 30
-    public function getattr($__attributes__ = null)
+    public function getattr($__attributes__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "attributes" => $__attributes__,
-            "varargs" => func_num_args() > 1 ? array_slice(func_get_args(), 1) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -329,13 +329,13 @@ $context["attrname"] == "checked")) {
     }
 
     // line 57
-    public function getinfopop($__label__ = null, $__infoid__ = null, $__afterlabel__ = null)
+    public function getinfopop($__label__ = null, $__infoid__ = null, $__afterlabel__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "label" => $__label__,
             "infoid" => $__infoid__,
             "afterlabel" => $__afterlabel__,
-            "varargs" => func_num_args() > 3 ? array_slice(func_get_args(), 3) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -381,14 +381,14 @@ $context["attrname"] == "checked")) {
     }
 
     // line 71
-    public function getlabel($__key__ = null, $__field__ = null, $__class__ = null, $__for__ = null)
+    public function getlabel($__key__ = null, $__field__ = null, $__class__ = null, $__for__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "key" => $__key__,
             "field" => $__field__,
             "class" => $__class__,
             "for" => $__for__,
-            "varargs" => func_num_args() > 4 ? array_slice(func_get_args(), 4) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -431,7 +431,7 @@ $context["attrname"] == "checked")) {
     }
 
     // line 82
-    public function getactionform($__content__ = null, $__action__ = null, $__icon__ = null, $__text__ = null, $__confirmation_text__ = null)
+    public function getactionform($__content__ = null, $__action__ = null, $__icon__ = null, $__text__ = null, $__confirmation_text__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "content" => $__content__,
@@ -439,7 +439,7 @@ $context["attrname"] == "checked")) {
             "icon" => $__icon__,
             "text" => $__text__,
             "confirmation_text" => $__confirmation_text__,
-            "varargs" => func_num_args() > 5 ? array_slice(func_get_args(), 5) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -494,11 +494,11 @@ $context["attrname"] == "checked")) {
     }
 
     // line 102
-    public function gettypepopover($__types__ = null)
+    public function gettypepopover($__types__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "types" => $__types__,
-            "varargs" => func_num_args() > 1 ? array_slice(func_get_args(), 1) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -530,11 +530,11 @@ $context["attrname"] == "checked")) {
     }
 
     // line 109
-    public function getstackbutton($__file__ = null)
+    public function getstackbutton($__file__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "file" => $__file__,
-            "varargs" => func_num_args() > 1 ? array_slice(func_get_args(), 1) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -570,11 +570,11 @@ $context["attrname"] == "checked")) {
     }
 
     // line 133
-    public function getinput_datetime($__opt__ = null)
+    public function getinput_datetime($__opt__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "opt" => $__opt__,
-            "varargs" => func_num_args() > 1 ? array_slice(func_get_args(), 1) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -583,7 +583,7 @@ $context["attrname"] == "checked")) {
         try {
             // line 134
             echo "    ";
-            $context["__internal_0d9cb9cd289c6bff68a41e8cca6456900f49d49a9ddd47466acb04fbd823384e"] = $this;
+            $context["__internal_9fb154c17e88bed9df61d09ede2e717dcb0c6ecb66427a8ac5785f3d73c511f0"] = $this;
             // line 135
             echo "
     ";
@@ -620,7 +620,7 @@ $context["attrname"] == "checked")) {
             echo "
     <input";
             // line 165
-            echo $context["__internal_0d9cb9cd289c6bff68a41e8cca6456900f49d49a9ddd47466acb04fbd823384e"]->getattr((isset($context["attr_data"]) ? $context["attr_data"] : null));
+            echo $context["__internal_9fb154c17e88bed9df61d09ede2e717dcb0c6ecb66427a8ac5785f3d73c511f0"]->getattr((isset($context["attr_data"]) ? $context["attr_data"] : null));
             echo ">
     <div class=\"input-group\">
         <span class=\"input-group-btn\">
@@ -630,14 +630,14 @@ $context["attrname"] == "checked")) {
         </span>
         <input";
             // line 172
-            echo $context["__internal_0d9cb9cd289c6bff68a41e8cca6456900f49d49a9ddd47466acb04fbd823384e"]->getattr((isset($context["attr_date"]) ? $context["attr_date"] : null));
+            echo $context["__internal_9fb154c17e88bed9df61d09ede2e717dcb0c6ecb66427a8ac5785f3d73c511f0"]->getattr((isset($context["attr_date"]) ? $context["attr_date"] : null));
             echo ">
         ";
             // line 173
             if (( !$this->getAttribute((isset($context["opt"]) ? $context["opt"] : null), "has_time", array(), "any", true, true) || ($this->getAttribute((isset($context["opt"]) ? $context["opt"] : null), "has_time", array()) != false))) {
                 // line 174
                 echo "            <input";
-                echo $context["__internal_0d9cb9cd289c6bff68a41e8cca6456900f49d49a9ddd47466acb04fbd823384e"]->getattr((isset($context["attr_time"]) ? $context["attr_time"] : null));
+                echo $context["__internal_9fb154c17e88bed9df61d09ede2e717dcb0c6ecb66427a8ac5785f3d73c511f0"]->getattr((isset($context["attr_time"]) ? $context["attr_time"] : null));
                 echo ">
         ";
             }
@@ -657,11 +657,11 @@ $context["attrname"] == "checked")) {
     }
 
     // line 187
-    public function gettimemoment($__datetime__ = null)
+    public function gettimemoment($__datetime__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "datetime" => $__datetime__,
-            "varargs" => func_num_args() > 1 ? array_slice(func_get_args(), 1) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -691,7 +691,7 @@ $context["attrname"] == "checked")) {
     }
 
     // line 200
-    public function getupload_buttons($__type__ = null, $__key__ = null, $__attr_upload__ = null, $__uploadpath__ = null, $__canUpload__ = null)
+    public function getupload_buttons($__type__ = null, $__key__ = null, $__attr_upload__ = null, $__uploadpath__ = null, $__canUpload__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "type" => $__type__,
@@ -699,7 +699,7 @@ $context["attrname"] == "checked")) {
             "attr_upload" => $__attr_upload__,
             "uploadpath" => $__uploadpath__,
             "canUpload" => $__canUpload__,
-            "varargs" => func_num_args() > 5 ? array_slice(func_get_args(), 5) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -708,7 +708,7 @@ $context["attrname"] == "checked")) {
         try {
             // line 201
             echo "    ";
-            $context["__internal_bc7db45dffe55b6fab54b3942b53ea3ea533cff7d9fa0d91bb043cd1d1e6e64d"] = $this;
+            $context["__internal_8855f3d462825d988f09f85c9b0ee1e139f2ef4e19f9cab5456d663ea08a6e49"] = $this;
             // line 202
             echo "
     ";
@@ -734,7 +734,7 @@ $context["attrname"] == "checked")) {
                 echo "</span>
             \t<input";
                 // line 213
-                echo $context["__internal_bc7db45dffe55b6fab54b3942b53ea3ea533cff7d9fa0d91bb043cd1d1e6e64d"]->getattr((isset($context["attr_upload"]) ? $context["attr_upload"] : null));
+                echo $context["__internal_8855f3d462825d988f09f85c9b0ee1e139f2ef4e19f9cab5456d663ea08a6e49"]->getattr((isset($context["attr_upload"]) ? $context["attr_upload"] : null));
                 echo ">
         \t</span>
         ";
@@ -751,7 +751,7 @@ $context["attrname"] == "checked")) {
                 $context["attr_upload"] = twig_array_merge((isset($context["attr_upload"]) ? $context["attr_upload"] : null), array("type" => "hidden"));
                 // line 220
                 echo "                <input";
-                echo $context["__internal_bc7db45dffe55b6fab54b3942b53ea3ea533cff7d9fa0d91bb043cd1d1e6e64d"]->getattr((isset($context["attr_upload"]) ? $context["attr_upload"] : null));
+                echo $context["__internal_8855f3d462825d988f09f85c9b0ee1e139f2ef4e19f9cab5456d663ea08a6e49"]->getattr((isset($context["attr_upload"]) ? $context["attr_upload"] : null));
                 echo ">
             </button>
         ";

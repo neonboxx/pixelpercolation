@@ -159,9 +159,9 @@ class __TwigTemplate_49b23ae5405c085112396be5276aeadc50330758c502dd0acee375c66ee
             echo "
 ";
             // line 60
-            $context["__internal_ec19372002d11da87a6bc4373dee487efc94e2efec21fb5927cb199923e611d4"] = $this->loadTemplate("_macro/_pager.twig", "_sub/_editable_record_list.twig", 60);
+            $context["__internal_506747cf01731037fbd5c98a18dd99574a110c09dc82eb29ae451beeff371464"] = $this->loadTemplate("_macro/_pager.twig", "_sub/_editable_record_list.twig", 60);
             // line 61
-            echo $context["__internal_ec19372002d11da87a6bc4373dee487efc94e2efec21fb5927cb199923e611d4"]->getpager($this->getAttribute((isset($context["contenttype"]) ? $context["contenttype"] : null), "slug", array()));
+            echo $context["__internal_506747cf01731037fbd5c98a18dd99574a110c09dc82eb29ae451beeff371464"]->getpager($this->getAttribute((isset($context["contenttype"]) ? $context["contenttype"] : null), "slug", array()));
             echo "
 
 ";

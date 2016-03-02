@@ -55,7 +55,7 @@ class __TwigTemplate_aa31912eae60fc8456bcff9c9ce90f3f6e06dba9caaccd796ad366d7dbe
         $context["macro"] = $this->loadTemplate("_macro/_macro.twig", "editfile/editfile.twig", 13);
         // line 14
         echo "    ";
-        $context["__internal_e3e442833b84e821a3b3c3878f8de1af7ecbc09360fb3a5e62da4cc2ba02a51e"] = $this->loadTemplate("_macro/_files_path.twig", "editfile/editfile.twig", 14);
+        $context["__internal_a2ae3af3490d2817363ff2567c84746cda09ec60b2286702b97b8dea2c1281ed"] = $this->loadTemplate("_macro/_files_path.twig", "editfile/editfile.twig", 14);
         // line 15
         echo "
     ";
@@ -74,7 +74,7 @@ class __TwigTemplate_aa31912eae60fc8456bcff9c9ce90f3f6e06dba9caaccd796ad366d7dbe
         <div class=\"col-xs-12\">
             ";
         // line 32
-        echo $context["__internal_e3e442833b84e821a3b3c3878f8de1af7ecbc09360fb3a5e62da4cc2ba02a51e"]->getfiles_path($this->getAttribute((isset($context["context"]) ? $context["context"] : null), "pathsegments", array()), $this->getAttribute((isset($context["context"]) ? $context["context"] : null), "namespace", array()), array("path" => "", "namespace" => $this->getAttribute((isset($context["context"]) ? $context["context"] : null), "namespace", array())));
+        echo $context["__internal_a2ae3af3490d2817363ff2567c84746cda09ec60b2286702b97b8dea2c1281ed"]->getfiles_path($this->getAttribute((isset($context["context"]) ? $context["context"] : null), "pathsegments", array()), $this->getAttribute((isset($context["context"]) ? $context["context"] : null), "namespace", array()), array("path" => "", "namespace" => $this->getAttribute((isset($context["context"]) ? $context["context"] : null), "namespace", array())));
         echo "
 
 

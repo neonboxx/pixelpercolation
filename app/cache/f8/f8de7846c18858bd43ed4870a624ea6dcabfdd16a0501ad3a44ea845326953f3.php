@@ -24,7 +24,10 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
   <head>
     <meta charset=\"utf-8\">
     <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">
-    <title></title>
+    <title>";
+        // line 9
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "title", array()), "html", null, true);
+        echo "</title>
     <meta name=\"description\" content=\"\">
     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -52,15 +55,25 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
         </div>
       <div class=\"hero section row\" style=\"background-image:url('";
         // line 29
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["content"]) ? $context["content"] : null), "hero", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "hero", array()), "html", null, true);
         echo "')\">
         <div class=\"hero-wrapper\">
             <div class=\"hero-logo\" style=\"background-image:url('";
         // line 31
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
-        echo "images/percolator_icon_256.png')\"></div>
-            <h1>PIXEL<span>PERCOLATION</span></h1>
-            <h2>Dolor sit amet, consectetur adipisicing elit. Qui doloremque nesciunt beatae illo, officiis odit, autem itaque voluptatibus.</h2>
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "logo", array()), "html", null, true);
+        echo "')\"></div>
+            <h1>";
+        // line 32
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "titlelight", array()), "html", null, true);
+        echo "<span>";
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "titlebold", array()), "html", null, true);
+        echo "</span></h1>
+            <h2>";
+        // line 33
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teaser", array()), "html", null, true);
+        echo "</h2>
         </div>
       </div>
         <div class=\"section about row\">
@@ -84,8 +97,10 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
         </div>
         <div class=\"row-hero portfolio section row\"style=\"background-image:url('";
         // line 55
-        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
-        echo "images/hero-office.jpg')\" >
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "hero2", array()), "html", null, true);
+        echo "')\" >
+            
         </div>
         <div class=\"section team row\">
             <div class=\"col-md-10 col-md-offset-1 col-sm-12 centered\" >
@@ -166,15 +181,15 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 
         <!-- build:js scripts/main.js -->
         <script src=\"";
-        // line 135
+        // line 136
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/jquery/jquery.js\"></script>
         <script src=\"";
-        // line 136
+        // line 137
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/fullpage.js/jquery.fullpage.min.js\"></script>
         <script src=\"";
-        // line 137
+        // line 138
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "scripts/main.js\"></script>
         <!-- endbuild -->
@@ -195,7 +210,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 
     public function getDebugInfo()
     {
-        return array (  178 => 137,  174 => 136,  170 => 135,  87 => 55,  60 => 31,  55 => 29,  38 => 15,  33 => 13,  19 => 1,);
+        return array (  193 => 138,  189 => 137,  185 => 136,  100 => 55,  75 => 33,  69 => 32,  64 => 31,  58 => 29,  41 => 15,  36 => 13,  29 => 9,  19 => 1,);
     }
 }
 /* <!doctype html>*/
@@ -206,7 +221,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*   <head>*/
 /*     <meta charset="utf-8">*/
 /*     <meta http-equiv="X-UA-Compatible" content="IE=edge">*/
-/*     <title></title>*/
+/*     <title>{{record.title}}</title>*/
 /*     <meta name="description" content="">*/
 /*     <meta name="viewport" content="width=device-width, initial-scale=1.0">*/
 /*     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->*/
@@ -226,11 +241,11 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*                 <li data-menuanchor="contact"><a href="#contact">Contact</a></li>*/
 /*             </ul>*/
 /*         </div>*/
-/*       <div class="hero section row" style="background-image:url('{{ content.hero }}')">*/
+/*       <div class="hero section row" style="background-image:url('{{ paths.files }}{{ record.templatefields.hero }}')">*/
 /*         <div class="hero-wrapper">*/
-/*             <div class="hero-logo" style="background-image:url('{{ paths.theme }}images/percolator_icon_256.png')"></div>*/
-/*             <h1>PIXEL<span>PERCOLATION</span></h1>*/
-/*             <h2>Dolor sit amet, consectetur adipisicing elit. Qui doloremque nesciunt beatae illo, officiis odit, autem itaque voluptatibus.</h2>*/
+/*             <div class="hero-logo" style="background-image:url('{{ paths.files }}{{ record.templatefields.logo }}')"></div>*/
+/*             <h1>{{ record.templatefields.titlelight }}<span>{{ record.templatefields.titlebold }}</span></h1>*/
+/*             <h2>{{ record.teaser }}</h2>*/
 /*         </div>*/
 /*       </div>*/
 /*         <div class="section about row">*/
@@ -252,7 +267,8 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*                     </div>*/
 /*             </div>*/
 /*         </div>*/
-/*         <div class="row-hero portfolio section row"style="background-image:url('{{ paths.theme }}images/hero-office.jpg')" >*/
+/*         <div class="row-hero portfolio section row"style="background-image:url('{{ paths.files }}{{ record.templatefields.hero2 }}')" >*/
+/*             */
 /*         </div>*/
 /*         <div class="section team row">*/
 /*             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >*/

@@ -24,7 +24,7 @@ class __TwigTemplate_732eafd5fbeee06cb7070d242eeafe43ac354f12d30d1e0871397710054
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 3
-        $context["__internal_6cf92643826b9cf669423799e15ec4128f9cdb93596245575f3434b0354da314"] = $this;
+        $context["__internal_4731ba40c927c2d368bca01aee7aa5696ce674fe9861165f29959436de0840f3"] = $this;
         // line 1
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
@@ -85,7 +85,7 @@ class __TwigTemplate_732eafd5fbeee06cb7070d242eeafe43ac354f12d30d1e0871397710054
             echo "</code></td>
                 <td><code>";
             // line 34
-            echo $context["__internal_6cf92643826b9cf669423799e15ec4128f9cdb93596245575f3434b0354da314"]->getdisplay_listener($context["listener"]);
+            echo $context["__internal_4731ba40c927c2d368bca01aee7aa5696ce674fe9861165f29959436de0840f3"]->getdisplay_listener($context["listener"]);
             echo "</code></td>
             </tr>
         ";
@@ -123,7 +123,7 @@ class __TwigTemplate_732eafd5fbeee06cb7070d242eeafe43ac354f12d30d1e0871397710054
                 echo "</code></td>
                     <td><code>";
                 // line 51
-                echo $context["__internal_6cf92643826b9cf669423799e15ec4128f9cdb93596245575f3434b0354da314"]->getdisplay_listener($this->getAttribute((isset($context["listeners"]) ? $context["listeners"] : null), $context["listener"], array(), "array"));
+                echo $context["__internal_4731ba40c927c2d368bca01aee7aa5696ce674fe9861165f29959436de0840f3"]->getdisplay_listener($this->getAttribute((isset($context["listeners"]) ? $context["listeners"] : null), $context["listener"], array(), "array"));
                 echo "</code></td>
                 </tr>
             ";
@@ -151,11 +151,11 @@ class __TwigTemplate_732eafd5fbeee06cb7070d242eeafe43ac354f12d30d1e0871397710054
     }
 
     // line 69
-    public function getdisplay_listener($__listener__ = null)
+    public function getdisplay_listener($__listener__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "listener" => $__listener__,
-            "varargs" => func_num_args() > 1 ? array_slice(func_get_args(), 1) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();

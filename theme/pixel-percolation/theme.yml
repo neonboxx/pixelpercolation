@@ -24,15 +24,23 @@ headerimage:
 # search_results_template: listing.twig
 
 templatefields:
-    extrafields.twig:
-        section_1:
+    index.twig:
+        titlelight:
             type: text
-            label: Section 1
-        section_2:
+            label: Title Light
+        titlebold:
             type: text
-            label: Section 2
-        image:
+            label: Title Bold
+        logo:
             type: image
+            label: logo
+        hero:
+            type: image
+            label: hero
+        hero2:
+            type: image
+            label: hero2
+        
 
 # There can be defined the templates for the template chooser
 #templateselect:

@@ -6,7 +6,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>{{record.title}}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -26,11 +26,11 @@
                 <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
             </ul>
         </div>
-      <div class="hero section row" style="background-image:url('{{ content.hero }}')">
+      <div class="hero section row" style="background-image:url('{{ paths.files }}{{ record.templatefields.hero }}')">
         <div class="hero-wrapper">
-            <div class="hero-logo" style="background-image:url('{{ paths.theme }}images/percolator_icon_256.png')"></div>
-            <h1>PIXEL<span>PERCOLATION</span></h1>
-            <h2>Dolor sit amet, consectetur adipisicing elit. Qui doloremque nesciunt beatae illo, officiis odit, autem itaque voluptatibus.</h2>
+            <div class="hero-logo" style="background-image:url('{{ paths.files }}{{ record.templatefields.logo }}')"></div>
+            <h1>{{ record.templatefields.titlelight }}<span>{{ record.templatefields.titlebold }}</span></h1>
+            <h2>{{ record.teaser }}</h2>
         </div>
       </div>
         <div class="section about row">
@@ -52,7 +52,8 @@
                     </div>
             </div>
         </div>
-        <div class="row-hero portfolio section row"style="background-image:url('{{ paths.theme }}images/hero-office.jpg')" >
+        <div class="row-hero portfolio section row"style="background-image:url('{{ paths.files }}{{ record.templatefields.hero2 }}')" >
+            
         </div>
         <div class="section team row">
             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >

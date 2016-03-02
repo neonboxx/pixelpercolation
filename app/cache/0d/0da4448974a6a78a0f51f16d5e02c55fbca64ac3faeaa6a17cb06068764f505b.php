@@ -26,12 +26,12 @@ class __TwigTemplate_82b9f1c04ab8497c31a9d2f0c6b1e8cc2363b9d2de140fb4a383a41c02d
     }
 
     // line 7
-    public function getstack($__items__ = null, $__ommit_empty__ = null)
+    public function getstack($__items__ = null, $__ommit_empty__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "items" => $__items__,
             "ommit_empty" => $__ommit_empty__,
-            "varargs" => func_num_args() > 2 ? array_slice(func_get_args(), 2) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -63,12 +63,12 @@ class __TwigTemplate_82b9f1c04ab8497c31a9d2f0c6b1e8cc2363b9d2de140fb4a383a41c02d
     }
 
     // line 22
-    public function getlastmodified($__contenttype_slug__ = null, $__content_id__ = null)
+    public function getlastmodified($__contenttype_slug__ = null, $__content_id__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "contenttype_slug" => $__contenttype_slug__,
             "content_id" => $__content_id__,
-            "varargs" => func_num_args() > 2 ? array_slice(func_get_args(), 2) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -100,12 +100,12 @@ class __TwigTemplate_82b9f1c04ab8497c31a9d2f0c6b1e8cc2363b9d2de140fb4a383a41c02d
     }
 
     // line 37
-    public function getchanges($__contenttype_slug__ = null, $__content_id__ = null)
+    public function getchanges($__contenttype_slug__ = null, $__content_id__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "contenttype_slug" => $__contenttype_slug__,
             "content_id" => $__content_id__,
-            "varargs" => func_num_args() > 2 ? array_slice(func_get_args(), 2) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();

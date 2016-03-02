@@ -45,10 +45,10 @@ class __TwigTemplate_e3f9f6ac973b04dcafcdddf5104a270296a32bdb70fc3776a5aaacbe393
     }
 
     // line 1
-    public function getflashbag()
+    public function getflashbag(...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
-            "varargs" => func_num_args() > 0 ? array_slice(func_get_args(), 0) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
@@ -85,12 +85,12 @@ class __TwigTemplate_e3f9f6ac973b04dcafcdddf5104a270296a32bdb70fc3776a5aaacbe393
     }
 
     // line 9
-    public function getmessages($__key__ = null, $__class__ = null)
+    public function getmessages($__key__ = null, $__class__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
             "key" => $__key__,
             "class" => $__class__,
-            "varargs" => func_num_args() > 2 ? array_slice(func_get_args(), 2) : array(),
+            "varargs" => $__varargs__,
         ));
 
         $blocks = array();
