@@ -26,3 +26,4 @@ node_modules
 .tmp
 app/bower_components
 app/cache
+app/database/bolt.db

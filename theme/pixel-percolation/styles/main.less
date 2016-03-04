@@ -5,7 +5,7 @@
 @fa-font-path: "../fonts/font-awesome";
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:400,200);
 
-@accent: #ffcc00;
+@accent: #00B8FF;
 // @hero:'../images/hero-header.jpg';
 // @hero2:'../images/hero-office.jpg';
 // @hero3:'../images/coffee.jpg';
@@ -24,7 +24,7 @@
 }
 
 
-@font-family-base:      'Work Sans', sans-serif;
+@font-family-base: 'Work Sans', sans-serif;
 
 h1{
     font-family: 'novecento_sans_widenormal', sans-serif;
@@ -37,12 +37,6 @@ body {
 	top: 0;
 	margin: 0;
 }
-.team{
-  background:#333;
-  background-size: cover; 
-  color: #fff;
-}
-
 .row{
   position: relative;
   background:@section-back-colour;
@@ -63,6 +57,12 @@ body {
 }
 .social-buttons{
     border-top:solid 1px #323A46;
+    h1{
+        a{
+            color: #fff;
+            font-size: 1.5em;
+        }
+    }
     position: absolute;
     text-align: center;
     bottom: 0;
@@ -164,6 +164,11 @@ button{
 }
 #submit-button{
     padding-left: 7.5px;
+    button{
+        background: #00B8FF;
+        border-color: #00B8FF;
+        color: white;   
+    }
 }
 #clear-button{
     padding-right: 7.5px;
@@ -176,5 +181,15 @@ button{
       position: absolute;
       top:50%;
       transform: translateY(-60%);
+    }
+}
+.team{
+  background:#fff;
+  background-size: cover; 
+  color: #333;
+}
+.about,.team{
+    img{
+        max-width: 100%;
     }
 }

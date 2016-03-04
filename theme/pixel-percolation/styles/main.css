@@ -7314,11 +7314,6 @@ body {
   top: 0;
   margin: 0;
 }
-.team {
-  background: #333;
-  background-size: cover;
-  color: #fff;
-}
 .row {
   position: relative;
   background: #323a46;
@@ -7342,6 +7337,10 @@ body {
   position: absolute;
   text-align: center;
   bottom: 0;
+}
+.social-buttons h1 a {
+  color: #fff;
+  font-size: 1.5em;
 }
 .wrapper {
   padding-left: 15px;
@@ -7404,8 +7403,8 @@ body {
   padding: 0px 10px;
 }
 .menu ul li.active {
-  border: 1px solid #ffcc00;
-  color: #ffcc00;
+  border: 1px solid #00b8ff;
+  color: #00b8ff;
   padding: 10px 20px;
 }
 .menu ul li a {
@@ -7440,6 +7439,11 @@ button {
 #submit-button {
   padding-left: 7.5px;
 }
+#submit-button button {
+  background: #00B8FF;
+  border-color: #00B8FF;
+  color: white;
+}
 #clear-button {
   padding-right: 7.5px;
 }
@@ -7450,5 +7454,14 @@ button {
   position: absolute;
   top: 50%;
   transform: translateY(-60%);
+}
+.team {
+  background: #fff;
+  background-size: cover;
+  color: #333;
+}
+.about img,
+.team img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=/styles/main.css.map */

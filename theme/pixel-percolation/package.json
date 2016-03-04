@@ -18,7 +18,6 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-rev": "~0.1.0",
     "grunt-usemin": "~2.4.0",
-    "grunt-usemin-bundle":"0.3.*",
     "grunt-mocha": "~0.4.11",
     "grunt-svgmin": "1.0.0",
     "grunt-concurrent": "~1.0.0",

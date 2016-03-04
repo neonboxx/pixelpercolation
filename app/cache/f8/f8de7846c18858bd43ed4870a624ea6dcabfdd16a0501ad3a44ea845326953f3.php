@@ -64,12 +64,12 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "logo", array()), "html", null, true);
         echo "')\"></div>
-            <h1>";
+            <h1><span>";
         // line 32
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "titlelight", array()), "html", null, true);
-        echo "<span>";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "titlebold", array()), "html", null, true);
-        echo "</span></h1>
+        echo "</span>";
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "titlelight", array()), "html", null, true);
+        echo "</h1>
             <h2>";
         // line 33
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teaser", array()), "html", null, true);
@@ -79,24 +79,42 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
         <div class=\"section about row\">
             <div class=\"col-md-10 col-md-offset-1 col-sm-12 centered\" >
                     <div class=\"col-sm-4\">
-                        <p class=\"hidden-xs\" style=\"text-align:center\"><img src=\"http://placehold.it/150x150\" alt=\"\"></p>
-                        <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et justo ac mauris iaculis semper. Fusce nec tincidunt dui. Curabitur nibh purus, tristique non neque ac, scelerisque ultricies massa. Praesent varius purus quis elit rutrum rutrum. Pellentesque massa purus, ultrices vel volutpat ac, tristique et tortor. Etiam nunc massa, sagittis quis ultricies nec, viverra a lorem. Nam non aliquam dui. Proin vulputate luctus purus. Suspendisse a massa sed justo bibendum porta dignissim eget sem</p>
+                        <p class=\"hidden-xs\" style=\"text-align:center\"><img src=\"";
+        // line 39
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "aboutimage1", array()), "html", null, true);
+        echo "\" alt=\"\"></p>
+                        <p>";
+        // line 40
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "abouttext1", array()), "html", null, true);
+        echo "</p>
                     </div>
                     <div class=\"col-sm-4\">
-                    <p class=\"hidden-xs\" style=\"text-align:center\"><img src=\"http://placehold.it/150x150\" alt=\"\"></p>
-                        <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et justo ac mauris iaculis semper. Fusce nec tincidunt dui. Curabitur nibh purus, tristique non neque ac, scelerisque ultricies massa. Praesent varius purus quis elit rutrum rutrum. Pellentesque massa purus, ultrices vel volutpat ac, tristique et tortor. Etiam nunc massa, sagittis quis ultricies nec, viverra a lorem. Nam non aliquam dui. Proin vulputate luctus purus. Suspendisse a massa sed justo bibendum porta dignissim eget sem</p>
+                    <p class=\"hidden-xs\" style=\"text-align:center\"><img src=\"";
+        // line 43
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "aboutimage2", array()), "html", null, true);
+        echo "\" alt=\"\"></p>
+                        <p>";
+        // line 44
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "abouttext2", array()), "html", null, true);
+        echo "</p>
                     </div>
                     <div class=\"col-sm-4\">
-                    <p  class=\"hidden-xs\" style=\"text-align:center\"><img src=\"http://placehold.it/150x150\" alt=\"\"></p>
-                        <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et justo ac mauris iaculis semper. Fusce nec tincidunt dui. Curabitur nibh purus, tristique non neque ac, scelerisque ultricies massa. Praesent varius purus quis elit rutrum rutrum. Pellentesque massa purus, ultrices vel volutpat ac, tristique et tortor. Etiam nunc massa, sagittis quis ultricies nec, viverra a lorem. Nam non aliquam dui. Proin vulputate luctus purus. Suspendisse a massa sed justo bibendum porta dignissim eget sem</p>
+                    <p  class=\"hidden-xs\" style=\"text-align:center\"><img src=\"";
+        // line 47
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "aboutimage3", array()), "html", null, true);
+        echo "\" alt=\"\"></p>
+                        <p>";
+        // line 48
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "abouttext3", array()), "html", null, true);
+        echo "</p>
                     </div>
             </div>
         </div>
         <div class=\"row-hero portfolio section row\"style=\"background-image:url('";
-        // line 55
+        // line 52
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "hero2", array()), "html", null, true);
         echo "')\" >
@@ -108,16 +126,37 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
                     <h1>The Team</h1>
                 </div>
                 <div class=\"col-sm-4\">
-                    <p style=\"text-align:center\"><img src=\"http://placehold.it/300x300\" alt=\"\"></p>
-                            <p></p>
+                    <p style=\"text-align:center\"><img src=\"";
+        // line 61
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamimage1", array()), "html", null, true);
+        echo "\" alt=\"\"></p>
+                            <p>";
+        // line 62
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamtext1", array()), "html", null, true);
+        echo "</p>
                 </div>
                 <div class=\"col-sm-4\">
-                    <p style=\"text-align:center\"><img src=\"http://placehold.it/300x300\" alt=\"\"></p>
-                            <p></p>
+                    <p style=\"text-align:center\"><img src=\"";
+        // line 65
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamimage2", array()), "html", null, true);
+        echo "\" alt=\"\"></p>
+                    <p>";
+        // line 66
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamtext2", array()), "html", null, true);
+        echo "</p>
                 </div>
                 <div class=\"col-sm-4\">
-                    <p style=\"text-align:center\"><img src=\"http://placehold.it/300x300\" alt=\"\"></p>
-                            <p></p>
+                    <p style=\"text-align:center\"><img src=\"";
+        // line 69
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamimage3", array()), "html", null, true);
+        echo "\" alt=\"\"></p>
+                            <p>";
+        // line 70
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamtext3", array()), "html", null, true);
+        echo "</p>
                 </div>
             </div>
         </div>
@@ -154,11 +193,23 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
             <div class=\"col-xs-12 social-buttons\">
                 <footer>
                     <h1>
-                        <a href=\"http://www.facebook.com/\"><i class=\"fa fa-facebook-square\"></i></a>
-                        <a href=\"http://www.twitter.com/\"><i class=\"fa fa-twitter-square\"></i></a>
-                        <a href=\"http://www.linkedin.com/\"><i class=\"fa fa-linkedin-square\"></i></a>
+                        <a href=\"";
+        // line 107
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "facebooklink", array()), "html", null, true);
+        echo "\"><i class=\"fa fa-facebook-square\"></i></a>
+                        <a href=\"";
+        // line 108
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "twitterlink", array()), "html", null, true);
+        echo "\"><i class=\"fa fa-twitter-square\"></i></a>
+                        <a href=\"";
+        // line 109
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "linkedinlink", array()), "html", null, true);
+        echo "\"><i class=\"fa fa-linkedin-square\"></i></a>
                     </h1>
-                    <p>2016 Pixel Percolation Limited. Registered in England No. 10024416  <a href=\"mailto:hello@pixelpercolation.com\">hello@pixelpercolation.com</a></p>
+                    <p>";
+        // line 111
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "footertext", array()), "html", null, true);
+        echo "</p>
                 </footer>
             </div>
     </div>
@@ -181,15 +232,15 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 
         <!-- build:js scripts/main.js -->
         <script src=\"";
-        // line 136
+        // line 133
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/jquery/jquery.js\"></script>
         <script src=\"";
-        // line 137
+        // line 134
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/fullpage.js/jquery.fullpage.min.js\"></script>
         <script src=\"";
-        // line 138
+        // line 135
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "scripts/main.js\"></script>
         <!-- endbuild -->
@@ -210,7 +261,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 
     public function getDebugInfo()
     {
-        return array (  193 => 138,  189 => 137,  185 => 136,  100 => 55,  75 => 33,  69 => 32,  64 => 31,  58 => 29,  41 => 15,  36 => 13,  29 => 9,  19 => 1,);
+        return array (  244 => 135,  240 => 134,  236 => 133,  211 => 111,  206 => 109,  202 => 108,  198 => 107,  158 => 70,  153 => 69,  147 => 66,  142 => 65,  136 => 62,  131 => 61,  118 => 52,  111 => 48,  106 => 47,  100 => 44,  95 => 43,  89 => 40,  84 => 39,  75 => 33,  69 => 32,  64 => 31,  58 => 29,  41 => 15,  36 => 13,  29 => 9,  19 => 1,);
     }
 }
 /* <!doctype html>*/
@@ -244,26 +295,23 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*       <div class="hero section row" style="background-image:url('{{ paths.files }}{{ record.templatefields.hero }}')">*/
 /*         <div class="hero-wrapper">*/
 /*             <div class="hero-logo" style="background-image:url('{{ paths.files }}{{ record.templatefields.logo }}')"></div>*/
-/*             <h1>{{ record.templatefields.titlelight }}<span>{{ record.templatefields.titlebold }}</span></h1>*/
+/*             <h1><span>{{ record.templatefields.titlebold }}</span>{{ record.templatefields.titlelight }}</h1>*/
 /*             <h2>{{ record.teaser }}</h2>*/
 /*         </div>*/
 /*       </div>*/
 /*         <div class="section about row">*/
 /*             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >*/
 /*                     <div class="col-sm-4">*/
-/*                         <p class="hidden-xs" style="text-align:center"><img src="http://placehold.it/150x150" alt=""></p>*/
-/*                         <p>*/
-/*                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et justo ac mauris iaculis semper. Fusce nec tincidunt dui. Curabitur nibh purus, tristique non neque ac, scelerisque ultricies massa. Praesent varius purus quis elit rutrum rutrum. Pellentesque massa purus, ultrices vel volutpat ac, tristique et tortor. Etiam nunc massa, sagittis quis ultricies nec, viverra a lorem. Nam non aliquam dui. Proin vulputate luctus purus. Suspendisse a massa sed justo bibendum porta dignissim eget sem</p>*/
+/*                         <p class="hidden-xs" style="text-align:center"><img src="{{ paths.files }}{{ record.aboutimage1 }}" alt=""></p>*/
+/*                         <p>{{ record.abouttext1 }}</p>*/
 /*                     </div>*/
 /*                     <div class="col-sm-4">*/
-/*                     <p class="hidden-xs" style="text-align:center"><img src="http://placehold.it/150x150" alt=""></p>*/
-/*                         <p>*/
-/*                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et justo ac mauris iaculis semper. Fusce nec tincidunt dui. Curabitur nibh purus, tristique non neque ac, scelerisque ultricies massa. Praesent varius purus quis elit rutrum rutrum. Pellentesque massa purus, ultrices vel volutpat ac, tristique et tortor. Etiam nunc massa, sagittis quis ultricies nec, viverra a lorem. Nam non aliquam dui. Proin vulputate luctus purus. Suspendisse a massa sed justo bibendum porta dignissim eget sem</p>*/
+/*                     <p class="hidden-xs" style="text-align:center"><img src="{{ paths.files }}{{ record.aboutimage2 }}" alt=""></p>*/
+/*                         <p>{{ record.abouttext2 }}</p>*/
 /*                     </div>*/
 /*                     <div class="col-sm-4">*/
-/*                     <p  class="hidden-xs" style="text-align:center"><img src="http://placehold.it/150x150" alt=""></p>*/
-/*                         <p>*/
-/*                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et justo ac mauris iaculis semper. Fusce nec tincidunt dui. Curabitur nibh purus, tristique non neque ac, scelerisque ultricies massa. Praesent varius purus quis elit rutrum rutrum. Pellentesque massa purus, ultrices vel volutpat ac, tristique et tortor. Etiam nunc massa, sagittis quis ultricies nec, viverra a lorem. Nam non aliquam dui. Proin vulputate luctus purus. Suspendisse a massa sed justo bibendum porta dignissim eget sem</p>*/
+/*                     <p  class="hidden-xs" style="text-align:center"><img src="{{ paths.files }}{{ record.aboutimage3 }}" alt=""></p>*/
+/*                         <p>{{ record.abouttext3 }}</p>*/
 /*                     </div>*/
 /*             </div>*/
 /*         </div>*/
@@ -276,16 +324,16 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*                     <h1>The Team</h1>*/
 /*                 </div>*/
 /*                 <div class="col-sm-4">*/
-/*                     <p style="text-align:center"><img src="http://placehold.it/300x300" alt=""></p>*/
-/*                             <p></p>*/
+/*                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage1 }}" alt=""></p>*/
+/*                             <p>{{ record.teamtext1 }}</p>*/
 /*                 </div>*/
 /*                 <div class="col-sm-4">*/
-/*                     <p style="text-align:center"><img src="http://placehold.it/300x300" alt=""></p>*/
-/*                             <p></p>*/
+/*                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage2 }}" alt=""></p>*/
+/*                     <p>{{ record.teamtext2 }}</p>*/
 /*                 </div>*/
 /*                 <div class="col-sm-4">*/
-/*                     <p style="text-align:center"><img src="http://placehold.it/300x300" alt=""></p>*/
-/*                             <p></p>*/
+/*                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage3 }}" alt=""></p>*/
+/*                             <p>{{ record.teamtext3 }}</p>*/
 /*                 </div>*/
 /*             </div>*/
 /*         </div>*/
@@ -322,11 +370,11 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*             <div class="col-xs-12 social-buttons">*/
 /*                 <footer>*/
 /*                     <h1>*/
-/*                         <a href="http://www.facebook.com/"><i class="fa fa-facebook-square"></i></a>*/
-/*                         <a href="http://www.twitter.com/"><i class="fa fa-twitter-square"></i></a>*/
-/*                         <a href="http://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a>*/
+/*                         <a href="{{record.facebooklink}}"><i class="fa fa-facebook-square"></i></a>*/
+/*                         <a href="{{record.twitterlink}}"><i class="fa fa-twitter-square"></i></a>*/
+/*                         <a href="{{record.linkedinlink}}"><i class="fa fa-linkedin-square"></i></a>*/
 /*                     </h1>*/
-/*                     <p>2016 Pixel Percolation Limited. Registered in England No. 10024416  <a href="mailto:hello@pixelpercolation.com">hello@pixelpercolation.com</a></p>*/
+/*                     <p>{{record.footertext}}</p>*/
 /*                 </footer>*/
 /*             </div>*/
 /*     </div>*/
