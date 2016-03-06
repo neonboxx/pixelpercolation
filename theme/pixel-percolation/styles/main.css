@@ -7325,10 +7325,11 @@ body {
   text-align: center;
 }
 .row.fp-section .centered {
-  transition: opacity 2s;
+  transition: all 1s;
   opacity: 0;
   position: absolute;
   top: 50%;
+  max-width: 20%;
   transform: translateY(-50%);
 }
 .row.row-hero {
@@ -7351,11 +7352,11 @@ body {
 }
 .active.row .centered {
   opacity: 1;
+  max-width: 100%;
 }
 .hero {
   color: #fff;
   background: #333;
-  background-size: 50% auto;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -7363,21 +7364,26 @@ body {
   padding: 0;
 }
 @media (min-width: 0) {
-  .hero.active {
+  .hero {
+    background-size: auto 50%;
+  }
+}
+@media (min-width: 60em) and (orientation: landscape) {
+  .hero {
+    background-size: 50% auto;
+  }
+}
+@media (min-width: 0) {
+  .hero.active.fp-section {
     background-size: auto 100%;
   }
 }
 @media (min-width: 60em) and (orientation: landscape) {
-  .hero.active {
+  .hero.active.fp-section {
     background-size: 100% auto;
   }
 }
-.hero.active .hero-wrapper {
-  opacity: 1;
-}
 .hero .hero-wrapper {
-  transition: opacity 2s;
-  opacity: 0;
   text-align: center;
   max-width: 900px;
   margin: auto;

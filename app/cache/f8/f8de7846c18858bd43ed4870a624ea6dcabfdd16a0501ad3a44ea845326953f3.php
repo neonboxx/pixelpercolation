@@ -180,7 +180,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
                             <textarea class=\"form-control\" id=\"inputMessage\" placeholder=\"Message\" rows=\"6\"></textarea>
                         </div>
                     </div>
-                    <div class=\"form-group  col-xs-12 col-sm-4 col-sm-offset-4\">
+                    <div class=\"form-group  col-xs-12 col-sm-6 col-sm-offset-3\">
                         <div id=\"submit-button\" class=\"col-xs-6\">
                             <button type=\"submit\" class=\"btn btn-default\">Send</button>
                         </div>
@@ -357,7 +357,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*                             <textarea class="form-control" id="inputMessage" placeholder="Message" rows="6"></textarea>*/
 /*                         </div>*/
 /*                     </div>*/
-/*                     <div class="form-group  col-xs-12 col-sm-4 col-sm-offset-4">*/
+/*                     <div class="form-group  col-xs-12 col-sm-6 col-sm-offset-3">*/
 /*                         <div id="submit-button" class="col-xs-6">*/
 /*                             <button type="submit" class="btn btn-default">Send</button>*/
 /*                         </div>*/

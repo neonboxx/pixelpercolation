@@ -47,10 +47,11 @@ body {
     }
   &.fp-section{
     .centered{
-        transition: opacity 2s;
+        transition: all 1s;
         opacity: 0;
         position: absolute;
         top:50%;
+        max-width: 20%;
         transform: translateY(-50%);
       }
   }
@@ -79,33 +80,33 @@ body {
 .active.row{
     .centered{
         opacity: 1;
+        max-width: 100%;
     }
 }
 .hero {
   color:#fff;
 	background: #333;
-	//background-image: url(@hero);
-	background-size: 50% auto;
+    @media (min-width: 0) { 
+        background-size: auto 50%;
+    }
+    @media (min-width: 60em) and (orientation:landscape) {
+        background-size: 50% auto;
+    }
     background-repeat: no-repeat;
     background-position: center;
     background-attachment:fixed;
     transition: background 1s; 
-    &.active{
+    &.active.fp-section{
         @media (min-width: 0) { 
             background-size: auto 100%;
         }
         @media (min-width: 60em) and (orientation:landscape) {
             background-size: 100% auto;
         }
-        .hero-wrapper{
-            opacity: 1
-        }
     }
 
 	padding: 0;
   .hero-wrapper {
-      transition:opacity 2s;
-      opacity: 0;
     text-align: center;
     max-width: 900px;
     margin: auto;
