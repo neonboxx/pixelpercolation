@@ -78,43 +78,49 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
       </div>
         <div class=\"section about row\">
             <div class=\"col-md-10 col-md-offset-1 col-sm-12 centered\" >
-                    <div class=\"col-sm-4\">
-                        <p class=\"hidden-xs\" style=\"text-align:center\"><img src=\"";
+                    <div class=\"col-xs-12 anim-in-down\">
+                        <h1>";
         // line 39
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "aboutheader", array()), "html", null, true);
+        echo "</h1>
+                    </div>
+                    <div class=\"col-sm-4 anim-in-left\">
+                        <p class=\"hidden-xs\" style=\"text-align:center\"><img src=\"";
+        // line 42
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "aboutimage1", array()), "html", null, true);
         echo "\" alt=\"\"></p>
                         <p>";
-        // line 40
+        // line 43
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "abouttext1", array()), "html", null, true);
         echo "</p>
                     </div>
-                    <div class=\"col-sm-4\">
+                    <div class=\"col-sm-4 anim-in-up\">
                     <p class=\"hidden-xs\" style=\"text-align:center\"><img src=\"";
-        // line 43
+        // line 46
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "aboutimage2", array()), "html", null, true);
         echo "\" alt=\"\"></p>
                         <p>";
-        // line 44
+        // line 47
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "abouttext2", array()), "html", null, true);
         echo "</p>
                     </div>
-                    <div class=\"col-sm-4\">
+                    <div class=\"col-sm-4 anim-in-right\">
                     <p  class=\"hidden-xs\" style=\"text-align:center\"><img src=\"";
-        // line 47
+        // line 50
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "aboutimage3", array()), "html", null, true);
         echo "\" alt=\"\"></p>
                         <p>";
-        // line 48
+        // line 51
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "abouttext3", array()), "html", null, true);
         echo "</p>
                     </div>
             </div>
         </div>
         <div class=\"row-hero portfolio section row\"style=\"background-image:url('";
-        // line 52
+        // line 55
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "hero2", array()), "html", null, true);
         echo "')\" >
@@ -122,39 +128,42 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
         </div>
         <div class=\"section team row\">
             <div class=\"col-md-10 col-md-offset-1 col-sm-12 centered\" >
-                <div class=\"col-xs-12\">
-                    <h1>The Team</h1>
-                </div>
-                <div class=\"col-xs-4\">
-                    <p style=\"text-align:center\"><img src=\"";
+                <div class=\"col-xs-12 anim-in-down\">
+                    <h1>";
         // line 61
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamheader", array()), "html", null, true);
+        echo "</h1>
+                </div>
+                <div class=\"col-xs-4 anim-in-left\">
+                    <p style=\"text-align:center\"><img src=\"";
+        // line 64
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamimage1", array()), "html", null, true);
         echo "\" alt=\"\"></p>
                             <p>";
-        // line 62
+        // line 65
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamtext1", array()), "html", null, true);
         echo "</p>
                 </div>
-                <div class=\"col-xs-4\">
+                <div class=\"col-xs-4 anim-in-up\">
                     <p style=\"text-align:center\"><img src=\"";
-        // line 65
+        // line 68
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamimage2", array()), "html", null, true);
         echo "\" alt=\"\"></p>
                     <p>";
-        // line 66
+        // line 69
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamtext2", array()), "html", null, true);
         echo "</p>
                 </div>
-                <div class=\"col-xs-4\">
+                <div class=\"col-xs-4 anim-in-right\">
                     <p style=\"text-align:center\"><img src=\"";
-        // line 69
+        // line 72
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamimage3", array()), "html", null, true);
         echo "\" alt=\"\"></p>
                             <p>";
-        // line 70
+        // line 73
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamtext3", array()), "html", null, true);
         echo "</p>
                 </div>
@@ -162,52 +171,60 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
         </div>
         <div class=\"section contact row\">
             <div class=\"col-xs-12 col-md-10 col-md-offset-1 centered\">
-                <div class=\"col-sm-12\">
-                    <h1>What you saying?</h1>
-                    <h2>We would like to hear it!</h2>
+                <div class=\"col-sm-12 anim-in-down\">
+                    <h1>";
+        // line 80
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "contactheader", array()), "html", null, true);
+        echo "</h1>
+                    <h2>";
+        // line 81
+        echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "contactsubheader", array()), "html", null, true);
+        echo "</h2>
                 </div>
-                <form class=\"form\">
-                    <div class=\"form-group col-xs-12\">
-                        <div id=\"name-col\" class=\"col-sm-4 col-sm-offset-2\">
-                            <input type=\"text\" class=\"form-control\" id=\"inputName\" placeholder=\"Name\">
+                <div class=\"anim-in-right\">
+                    <form class=\"form\">
+                        <div class=\"form-group col-xs-12\">
+                            <div id=\"name-col\" class=\"col-sm-4 col-sm-offset-2\">
+                                <input type=\"text\" class=\"form-control\" id=\"inputName\" placeholder=\"Name\">
+                            </div>
+                            <div id=\"email-col\" class=\"col-sm-4\">
+                                <input type=\"email\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email\">
+                            </div>
                         </div>
-                        <div id=\"email-col\" class=\"col-sm-4\">
-                            <input type=\"email\" class=\"form-control\" id=\"inputEmail\" placeholder=\"Email\">
+                        <div class=\"form-group  col-xs-12\">
+                            <div class=\"col-sm-8 col-sm-offset-2\">
+                                <textarea class=\"form-control\" id=\"inputMessage\" placeholder=\"Message\" rows=\"6\"></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class=\"form-group  col-xs-12\">
-                        <div class=\"col-sm-8 col-sm-offset-2\">
-                            <textarea class=\"form-control\" id=\"inputMessage\" placeholder=\"Message\" rows=\"6\"></textarea>
+                        <div class=\"form-group  col-xs-12 col-sm-6 col-sm-offset-3\">
+                            <div id=\"submit-button\" class=\"col-xs-6\">
+                                <button type=\"submit\" class=\"btn btn-default\">Send</button>
+                            </div>
+                            <div id=\"clear-button\" class=\"col-xs-6\">
+                                <button class=\"btn btn-default\">Clear</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class=\"form-group  col-xs-12 col-sm-6 col-sm-offset-3\">
-                        <div id=\"submit-button\" class=\"col-xs-6\">
-                            <button type=\"submit\" class=\"btn btn-default\">Send</button>
-                        </div>
-                        <div id=\"clear-button\" class=\"col-xs-6\">
-                            <button class=\"btn btn-default\">Clear</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
             <div class=\"col-xs-12 social-buttons\">
                 <footer>
                     <h1>
                         <a href=\"";
-        // line 107
+        // line 112
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "facebooklink", array()), "html", null, true);
         echo "\"><i class=\"fa fa-facebook-square\"></i></a>
                         <a href=\"";
-        // line 108
+        // line 113
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "twitterlink", array()), "html", null, true);
         echo "\"><i class=\"fa fa-twitter-square\"></i></a>
                         <a href=\"";
-        // line 109
+        // line 114
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "linkedinlink", array()), "html", null, true);
         echo "\"><i class=\"fa fa-linkedin-square\"></i></a>
                     </h1>
                     <p>";
-        // line 111
+        // line 116
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "footertext", array()), "html", null, true);
         echo "</p>
                 </footer>
@@ -232,15 +249,15 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 
         <!-- build:js scripts/main.js -->
         <script src=\"";
-        // line 133
+        // line 138
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/jquery/jquery.js\"></script>
         <script src=\"";
-        // line 134
+        // line 139
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "bower_components/fullpage.js/jquery.fullpage.min.js\"></script>
         <script src=\"";
-        // line 135
+        // line 140
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "theme", array()), "html", null, true);
         echo "scripts/main.js\"></script>
         <!-- endbuild -->
@@ -261,7 +278,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 
     public function getDebugInfo()
     {
-        return array (  244 => 135,  240 => 134,  236 => 133,  211 => 111,  206 => 109,  202 => 108,  198 => 107,  158 => 70,  153 => 69,  147 => 66,  142 => 65,  136 => 62,  131 => 61,  118 => 52,  111 => 48,  106 => 47,  100 => 44,  95 => 43,  89 => 40,  84 => 39,  75 => 33,  69 => 32,  64 => 31,  58 => 29,  41 => 15,  36 => 13,  29 => 9,  19 => 1,);
+        return array (  261 => 140,  257 => 139,  253 => 138,  228 => 116,  223 => 114,  219 => 113,  215 => 112,  181 => 81,  177 => 80,  167 => 73,  162 => 72,  156 => 69,  151 => 68,  145 => 65,  140 => 64,  134 => 61,  124 => 55,  117 => 51,  112 => 50,  106 => 47,  101 => 46,  95 => 43,  90 => 42,  84 => 39,  75 => 33,  69 => 32,  64 => 31,  58 => 29,  41 => 15,  36 => 13,  29 => 9,  19 => 1,);
     }
 }
 /* <!doctype html>*/
@@ -301,15 +318,18 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*       </div>*/
 /*         <div class="section about row">*/
 /*             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >*/
-/*                     <div class="col-sm-4">*/
+/*                     <div class="col-xs-12 anim-in-down">*/
+/*                         <h1>{{ record.aboutheader }}</h1>*/
+/*                     </div>*/
+/*                     <div class="col-sm-4 anim-in-left">*/
 /*                         <p class="hidden-xs" style="text-align:center"><img src="{{ paths.files }}{{ record.aboutimage1 }}" alt=""></p>*/
 /*                         <p>{{ record.abouttext1 }}</p>*/
 /*                     </div>*/
-/*                     <div class="col-sm-4">*/
+/*                     <div class="col-sm-4 anim-in-up">*/
 /*                     <p class="hidden-xs" style="text-align:center"><img src="{{ paths.files }}{{ record.aboutimage2 }}" alt=""></p>*/
 /*                         <p>{{ record.abouttext2 }}</p>*/
 /*                     </div>*/
-/*                     <div class="col-sm-4">*/
+/*                     <div class="col-sm-4 anim-in-right">*/
 /*                     <p  class="hidden-xs" style="text-align:center"><img src="{{ paths.files }}{{ record.aboutimage3 }}" alt=""></p>*/
 /*                         <p>{{ record.abouttext3 }}</p>*/
 /*                     </div>*/
@@ -320,18 +340,18 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*         </div>*/
 /*         <div class="section team row">*/
 /*             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >*/
-/*                 <div class="col-xs-12">*/
-/*                     <h1>The Team</h1>*/
+/*                 <div class="col-xs-12 anim-in-down">*/
+/*                     <h1>{{ record.teamheader }}</h1>*/
 /*                 </div>*/
-/*                 <div class="col-xs-4">*/
+/*                 <div class="col-xs-4 anim-in-left">*/
 /*                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage1 }}" alt=""></p>*/
 /*                             <p>{{ record.teamtext1 }}</p>*/
 /*                 </div>*/
-/*                 <div class="col-xs-4">*/
+/*                 <div class="col-xs-4 anim-in-up">*/
 /*                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage2 }}" alt=""></p>*/
 /*                     <p>{{ record.teamtext2 }}</p>*/
 /*                 </div>*/
-/*                 <div class="col-xs-4">*/
+/*                 <div class="col-xs-4 anim-in-right">*/
 /*                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage3 }}" alt=""></p>*/
 /*                             <p>{{ record.teamtext3 }}</p>*/
 /*                 </div>*/
@@ -339,33 +359,35 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*         </div>*/
 /*         <div class="section contact row">*/
 /*             <div class="col-xs-12 col-md-10 col-md-offset-1 centered">*/
-/*                 <div class="col-sm-12">*/
-/*                     <h1>What you saying?</h1>*/
-/*                     <h2>We would like to hear it!</h2>*/
+/*                 <div class="col-sm-12 anim-in-down">*/
+/*                     <h1>{{ record.contactheader }}</h1>*/
+/*                     <h2>{{ record.contactsubheader }}</h2>*/
 /*                 </div>*/
-/*                 <form class="form">*/
-/*                     <div class="form-group col-xs-12">*/
-/*                         <div id="name-col" class="col-sm-4 col-sm-offset-2">*/
-/*                             <input type="text" class="form-control" id="inputName" placeholder="Name">*/
+/*                 <div class="anim-in-right">*/
+/*                     <form class="form">*/
+/*                         <div class="form-group col-xs-12">*/
+/*                             <div id="name-col" class="col-sm-4 col-sm-offset-2">*/
+/*                                 <input type="text" class="form-control" id="inputName" placeholder="Name">*/
+/*                             </div>*/
+/*                             <div id="email-col" class="col-sm-4">*/
+/*                                 <input type="email" class="form-control" id="inputEmail" placeholder="Email">*/
+/*                             </div>*/
 /*                         </div>*/
-/*                         <div id="email-col" class="col-sm-4">*/
-/*                             <input type="email" class="form-control" id="inputEmail" placeholder="Email">*/
+/*                         <div class="form-group  col-xs-12">*/
+/*                             <div class="col-sm-8 col-sm-offset-2">*/
+/*                                 <textarea class="form-control" id="inputMessage" placeholder="Message" rows="6"></textarea>*/
+/*                             </div>*/
 /*                         </div>*/
-/*                     </div>*/
-/*                     <div class="form-group  col-xs-12">*/
-/*                         <div class="col-sm-8 col-sm-offset-2">*/
-/*                             <textarea class="form-control" id="inputMessage" placeholder="Message" rows="6"></textarea>*/
+/*                         <div class="form-group  col-xs-12 col-sm-6 col-sm-offset-3">*/
+/*                             <div id="submit-button" class="col-xs-6">*/
+/*                                 <button type="submit" class="btn btn-default">Send</button>*/
+/*                             </div>*/
+/*                             <div id="clear-button" class="col-xs-6">*/
+/*                                 <button class="btn btn-default">Clear</button>*/
+/*                             </div>*/
 /*                         </div>*/
-/*                     </div>*/
-/*                     <div class="form-group  col-xs-12 col-sm-6 col-sm-offset-3">*/
-/*                         <div id="submit-button" class="col-xs-6">*/
-/*                             <button type="submit" class="btn btn-default">Send</button>*/
-/*                         </div>*/
-/*                         <div id="clear-button" class="col-xs-6">*/
-/*                             <button class="btn btn-default">Clear</button>*/
-/*                         </div>*/
-/*                     </div>*/
-/*                 </form>*/
+/*                     </form>*/
+/*                 </div>*/
 /*             </div>*/
 /*             <div class="col-xs-12 social-buttons">*/
 /*                 <footer>*/

@@ -35,15 +35,18 @@
       </div>
         <div class="section about row">
             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >
-                    <div class="col-sm-4">
+                    <div class="col-xs-12 anim-in-down">
+                        <h1>{{ record.aboutheader }}</h1>
+                    </div>
+                    <div class="col-sm-4 anim-in-left">
                         <p class="hidden-xs" style="text-align:center"><img src="{{ paths.files }}{{ record.aboutimage1 }}" alt=""></p>
                         <p>{{ record.abouttext1 }}</p>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 anim-in-up">
                     <p class="hidden-xs" style="text-align:center"><img src="{{ paths.files }}{{ record.aboutimage2 }}" alt=""></p>
                         <p>{{ record.abouttext2 }}</p>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4 anim-in-right">
                     <p  class="hidden-xs" style="text-align:center"><img src="{{ paths.files }}{{ record.aboutimage3 }}" alt=""></p>
                         <p>{{ record.abouttext3 }}</p>
                     </div>
@@ -54,18 +57,18 @@
         </div>
         <div class="section team row">
             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >
-                <div class="col-xs-12">
-                    <h1>The Team</h1>
+                <div class="col-xs-12 anim-in-down">
+                    <h1>{{ record.teamheader }}</h1>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4 anim-in-left">
                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage1 }}" alt=""></p>
                             <p>{{ record.teamtext1 }}</p>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4 anim-in-up">
                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage2 }}" alt=""></p>
                     <p>{{ record.teamtext2 }}</p>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-4 anim-in-right">
                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage3 }}" alt=""></p>
                             <p>{{ record.teamtext3 }}</p>
                 </div>
@@ -73,33 +76,35 @@
         </div>
         <div class="section contact row">
             <div class="col-xs-12 col-md-10 col-md-offset-1 centered">
-                <div class="col-sm-12">
-                    <h1>What you saying?</h1>
-                    <h2>We would like to hear it!</h2>
+                <div class="col-sm-12 anim-in-down">
+                    <h1>{{ record.contactheader }}</h1>
+                    <h2>{{ record.contactsubheader }}</h2>
                 </div>
-                <form class="form">
-                    <div class="form-group col-xs-12">
-                        <div id="name-col" class="col-sm-4 col-sm-offset-2">
-                            <input type="text" class="form-control" id="inputName" placeholder="Name">
+                <div class="anim-in-right">
+                    <form class="form">
+                        <div class="form-group col-xs-12">
+                            <div id="name-col" class="col-sm-4 col-sm-offset-2">
+                                <input type="text" class="form-control" id="inputName" placeholder="Name">
+                            </div>
+                            <div id="email-col" class="col-sm-4">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                            </div>
                         </div>
-                        <div id="email-col" class="col-sm-4">
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        <div class="form-group  col-xs-12">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <textarea class="form-control" id="inputMessage" placeholder="Message" rows="6"></textarea>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group  col-xs-12">
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <textarea class="form-control" id="inputMessage" placeholder="Message" rows="6"></textarea>
+                        <div class="form-group  col-xs-12 col-sm-6 col-sm-offset-3">
+                            <div id="submit-button" class="col-xs-6">
+                                <button type="submit" class="btn btn-default">Send</button>
+                            </div>
+                            <div id="clear-button" class="col-xs-6">
+                                <button class="btn btn-default">Clear</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group  col-xs-12 col-sm-6 col-sm-offset-3">
-                        <div id="submit-button" class="col-xs-6">
-                            <button type="submit" class="btn btn-default">Send</button>
-                        </div>
-                        <div id="clear-button" class="col-xs-6">
-                            <button class="btn btn-default">Clear</button>
-                        </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
             <div class="col-xs-12 social-buttons">
                 <footer>

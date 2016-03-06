@@ -42,16 +42,35 @@ body {
   height: 100%;
   background:@section-back-colour;
   color:@section-colour;
+  overflow: hidden;
   h1,h2{
       text-align: center;
     }
   &.fp-section{
     .centered{
+        div[class*="anim-in-"]{
+            transition: transform 1s ease-out;
+        }
+        .anim-in-up{
+            transform: translateY(200%)
+        }
+        .anim-in-down{
+            transform: translateY(-200%)
+        }
+        .anim-in-left{
+            transform: translateX(-200%)
+        }
+        .anim-in-right{
+            transform: translateX(200%)
+        }
+        h1,h2{
+            margin-bottom: 1em;
+        }
+        
         transition: all 1s;
         opacity: 0;
         position: absolute;
         top:50%;
-        max-width: 20%;
         transform: translateY(-50%);
       }
   }
@@ -81,6 +100,9 @@ body {
     .centered{
         opacity: 1;
         max-width: 100%;
+        div[class*="anim-in-"]{
+            transform: translate(0%)
+        }
     }
 }
 .hero {

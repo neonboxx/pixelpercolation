@@ -33,9 +33,12 @@ pages:
         template:
             type: templateselect
             filter: '*.twig'
+        aboutHeader:
+            type: text
+            label: About Header
+            group: About
         aboutImage1:
             type: image
-            group: About
         aboutImage2:
             type: image
         aboutImage3:
@@ -49,9 +52,12 @@ pages:
         aboutText3:
             type: html
             height: 300px
+        teamHeader:
+            type: text
+            label: Team Header
+            group: Team
         teamImage1:
             type: image
-            group: Team
         teamImage2:
             type: image
         teamImage3:

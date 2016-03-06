@@ -7319,6 +7319,7 @@ body {
   height: 100%;
   background: #323a46;
   color: #ffffff;
+  overflow: hidden;
 }
 .row h1,
 .row h2 {
@@ -7329,8 +7330,26 @@ body {
   opacity: 0;
   position: absolute;
   top: 50%;
-  max-width: 20%;
   transform: translateY(-50%);
+}
+.row.fp-section .centered div[class*="anim-in-"] {
+  transition: transform 1s ease-out;
+}
+.row.fp-section .centered .anim-in-up {
+  transform: translateY(200%);
+}
+.row.fp-section .centered .anim-in-down {
+  transform: translateY(-200%);
+}
+.row.fp-section .centered .anim-in-left {
+  transform: translateX(-200%);
+}
+.row.fp-section .centered .anim-in-right {
+  transform: translateX(200%);
+}
+.row.fp-section .centered h1,
+.row.fp-section .centered h2 {
+  margin-bottom: 1em;
 }
 .row.row-hero {
   background-size: cover;
@@ -7353,6 +7372,9 @@ body {
 .active.row .centered {
   opacity: 1;
   max-width: 100%;
+}
+.active.row .centered div[class*="anim-in-"] {
+  transform: translate(0%);
 }
 .hero {
   color: #fff;
