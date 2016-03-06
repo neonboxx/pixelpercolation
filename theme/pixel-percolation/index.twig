@@ -29,7 +29,7 @@
       <div class="hero section row" style="background-image:url('{{ paths.files }}{{ record.templatefields.hero }}')">
         <div class="hero-wrapper">
             <div class="hero-logo" style="background-image:url('{{ paths.files }}{{ record.templatefields.logo }}')"></div>
-            <h1><span>{{ record.templatefields.titlebold }}</span>{{ record.templatefields.titlelight }}</h1>
+            <h1><span>{{ record.templatefields.titlebold }}</span> {{ record.templatefields.titlelight }}</h1>
             <h2>{{ record.teaser }}</h2>
         </div>
       </div>
@@ -54,18 +54,18 @@
         </div>
         <div class="section team row">
             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >
-                <div class="col-sm-12">
+                <div class="col-xs-12">
                     <h1>The Team</h1>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-xs-4">
                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage1 }}" alt=""></p>
                             <p>{{ record.teamtext1 }}</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-xs-4">
                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage2 }}" alt=""></p>
                     <p>{{ record.teamtext2 }}</p>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-xs-4">
                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage3 }}" alt=""></p>
                             <p>{{ record.teamtext3 }}</p>
                 </div>

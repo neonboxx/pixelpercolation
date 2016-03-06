@@ -67,7 +67,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
             <h1><span>";
         // line 32
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "titlebold", array()), "html", null, true);
-        echo "</span>";
+        echo "</span> ";
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["record"]) ? $context["record"] : null), "templatefields", array()), "titlelight", array()), "html", null, true);
         echo "</h1>
             <h2>";
@@ -122,10 +122,10 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
         </div>
         <div class=\"section team row\">
             <div class=\"col-md-10 col-md-offset-1 col-sm-12 centered\" >
-                <div class=\"col-sm-12\">
+                <div class=\"col-xs-12\">
                     <h1>The Team</h1>
                 </div>
-                <div class=\"col-sm-4\">
+                <div class=\"col-xs-4\">
                     <p style=\"text-align:center\"><img src=\"";
         // line 61
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
@@ -136,7 +136,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamtext1", array()), "html", null, true);
         echo "</p>
                 </div>
-                <div class=\"col-sm-4\">
+                <div class=\"col-xs-4\">
                     <p style=\"text-align:center\"><img src=\"";
         // line 65
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
@@ -147,7 +147,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "teamtext2", array()), "html", null, true);
         echo "</p>
                 </div>
-                <div class=\"col-sm-4\">
+                <div class=\"col-xs-4\">
                     <p style=\"text-align:center\"><img src=\"";
         // line 69
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["paths"]) ? $context["paths"] : null), "files", array()), "html", null, true);
@@ -295,7 +295,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*       <div class="hero section row" style="background-image:url('{{ paths.files }}{{ record.templatefields.hero }}')">*/
 /*         <div class="hero-wrapper">*/
 /*             <div class="hero-logo" style="background-image:url('{{ paths.files }}{{ record.templatefields.logo }}')"></div>*/
-/*             <h1><span>{{ record.templatefields.titlebold }}</span>{{ record.templatefields.titlelight }}</h1>*/
+/*             <h1><span>{{ record.templatefields.titlebold }}</span> {{ record.templatefields.titlelight }}</h1>*/
 /*             <h2>{{ record.teaser }}</h2>*/
 /*         </div>*/
 /*       </div>*/
@@ -320,18 +320,18 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*         </div>*/
 /*         <div class="section team row">*/
 /*             <div class="col-md-10 col-md-offset-1 col-sm-12 centered" >*/
-/*                 <div class="col-sm-12">*/
+/*                 <div class="col-xs-12">*/
 /*                     <h1>The Team</h1>*/
 /*                 </div>*/
-/*                 <div class="col-sm-4">*/
+/*                 <div class="col-xs-4">*/
 /*                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage1 }}" alt=""></p>*/
 /*                             <p>{{ record.teamtext1 }}</p>*/
 /*                 </div>*/
-/*                 <div class="col-sm-4">*/
+/*                 <div class="col-xs-4">*/
 /*                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage2 }}" alt=""></p>*/
 /*                     <p>{{ record.teamtext2 }}</p>*/
 /*                 </div>*/
-/*                 <div class="col-sm-4">*/
+/*                 <div class="col-xs-4">*/
 /*                     <p style="text-align:center"><img src="{{ paths.files }}{{ record.teamimage3 }}" alt=""></p>*/
 /*                             <p>{{ record.teamtext3 }}</p>*/
 /*                 </div>*/

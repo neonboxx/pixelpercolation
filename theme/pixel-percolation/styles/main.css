@@ -7316,6 +7316,7 @@ body {
 }
 .row {
   position: relative;
+  height: 100%;
   background: #323a46;
   color: #ffffff;
 }
@@ -7323,7 +7324,9 @@ body {
 .row h2 {
   text-align: center;
 }
-.row .centered {
+.row.fp-section .centered {
+  transition: opacity 2s;
+  opacity: 0;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -7346,14 +7349,35 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.active.row .centered {
+  opacity: 1;
+}
 .hero {
   color: #fff;
   background: #333;
-  background-size: cover;
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
+  transition: background 1s;
   padding: 0;
 }
+@media (min-width: 0) {
+  .hero.active {
+    background-size: auto 100%;
+  }
+}
+@media (min-width: 60em) and (orientation: landscape) {
+  .hero.active {
+    background-size: 100% auto;
+  }
+}
+.hero.active .hero-wrapper {
+  opacity: 1;
+}
 .hero .hero-wrapper {
+  transition: opacity 2s;
+  opacity: 0;
   text-align: center;
   max-width: 900px;
   margin: auto;
@@ -7362,6 +7386,8 @@ body {
 .hero .hero-wrapper .hero-logo {
   width: 150px;
   height: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
   display: inline-block;
   margin-top: 15px;
   background-size: contain;
@@ -7370,6 +7396,7 @@ body {
   font-size: 5em;
   font-family: Novecentosanswide-Light;
   line-height: 1;
+  word-spacing: -0.25em;
 }
 .hero .hero-wrapper h1 span {
   font-family: novecento_sans_widenormal;
@@ -7449,8 +7476,11 @@ button {
 }
 #fullpage {
   padding: 0 15px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
-#contact .centered {
+#contact .active .centered {
   position: absolute;
   top: 50%;
   transform: translateY(-60%);

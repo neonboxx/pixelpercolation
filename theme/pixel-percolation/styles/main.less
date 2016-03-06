@@ -39,15 +39,20 @@ body {
 }
 .row{
   position: relative;
+  height: 100%;
   background:@section-back-colour;
   color:@section-colour;
   h1,h2{
       text-align: center;
     }
-  .centered{
-      position: absolute;
-      top:50%;
-      transform: translateY(-50%);
+  &.fp-section{
+    .centered{
+        transition: opacity 2s;
+        opacity: 0;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+      }
   }
   &.row-hero{
     //background-image: url(@hero2);
@@ -71,14 +76,36 @@ body {
   padding-left:15px;
   padding-right: 15px;
 }
+.active.row{
+    .centered{
+        opacity: 1;
+    }
+}
 .hero {
   color:#fff;
 	background: #333;
 	//background-image: url(@hero);
-	background-size: cover;
+	background-size: 50% auto;
+    background-repeat: no-repeat;
+    background-position: center;
     background-attachment:fixed;
+    transition: background 1s; 
+    &.active{
+        @media (min-width: 0) { 
+            background-size: auto 100%;
+        }
+        @media (min-width: 60em) and (orientation:landscape) {
+            background-size: 100% auto;
+        }
+        .hero-wrapper{
+            opacity: 1
+        }
+    }
+
 	padding: 0;
   .hero-wrapper {
+      transition:opacity 2s;
+      opacity: 0;
     text-align: center;
     max-width: 900px;
     margin: auto;
@@ -86,15 +113,20 @@ body {
     .hero-logo {
       width: 150px;
       height: 150px;
+      background-repeat: no-repeat;
+      background-position: center;  
       display: inline-block;
       margin-top: 15px;
       ///background-image: url('../images/percolator_icon_256.png');
       background-size: contain;
     }
     h1 {
+        
+        
       font-size: 5em;
       font-family: Novecentosanswide-Light;
       line-height: 1;
+      word-spacing: -0.25em;
       span{
           font-family: novecento_sans_widenormal
       }
@@ -175,8 +207,11 @@ button{
 }
 #fullpage{
     padding: 0 15px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
-#contact{
+#contact .active{
     .centered{
       position: absolute;
       top:50%;
