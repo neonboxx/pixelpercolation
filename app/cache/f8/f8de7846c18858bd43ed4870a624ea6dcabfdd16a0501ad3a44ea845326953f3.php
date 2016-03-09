@@ -29,7 +29,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["record"]) ? $context["record"] : null), "title", array()), "html", null, true);
         echo "</title>
     <meta name=\"description\" content=\"\">
-    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\", maximum-scale=1, user-scalable:no>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel=\"stylesheet\" href=\"";
         // line 13
@@ -291,7 +291,7 @@ class __TwigTemplate_e73a13c4c86f18f71c4f424fc2a49608e21ccc15370c24fa671f05d8993
 /*     <meta http-equiv="X-UA-Compatible" content="IE=edge">*/
 /*     <title>{{record.title}}</title>*/
 /*     <meta name="description" content="">*/
-/*     <meta name="viewport" content="width=device-width, initial-scale=1.0">*/
+/*     <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1, user-scalable:no>*/
 /*     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->*/
 /*     <link rel="stylesheet" href="{{ paths.theme }}styles/main.css">*/
 /*     <!-- build:js scripts/vendor/modernizr.js -->*/
