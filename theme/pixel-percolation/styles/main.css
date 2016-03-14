@@ -7404,8 +7404,8 @@ body {
   padding-top: 10%;
 }
 .hero .hero-wrapper .hero-logo {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
@@ -7499,7 +7499,7 @@ body {
 }
 .show-nav #body-nav {
   background: #0e1832;
-  background: rgba(14, 24, 50, 0.95);
+  background: rgba(72, 72, 72, 0.91);
   z-index: 1;
 }
 .hide-nav #body-nav {
@@ -7509,6 +7509,7 @@ body {
   z-index: 1;
 }
 #body-nav ul {
+  list-style: none;
   position: absolute;
   left: 0%;
   width: 100%;
@@ -7651,14 +7652,14 @@ button {
 }
 .hamburger-slim {
   background: transparent;
-  margin: 60px auto 40px;
+  margin: 30px auto 40px;
   position: relative;
   height: 30px;
   width: 50px;
 }
 .hamburger-slim:before,
 .hamburger-slim:after {
-  background: #fff;
+  background: #C7C7C7;
   backface-visibility: hidden;
   content: "";
   height: 2px;
@@ -7667,7 +7668,7 @@ button {
   width: 50px;
 }
 .hamburger-slim:before {
-  box-shadow: #fff 0 14px 0 0;
+  box-shadow: #C7C7C7 0 14px 0 0;
   position: absolute;
   top: 0;
 }
