@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0", maximum-scale=1, user-scalable:no>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="{{ paths.theme }}styles/main.css">
+    <link rel="stylesheet" href="{{ paths.theme }}styles/owl.css"></script>
+    
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="{{ paths.theme }}bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -69,23 +71,25 @@
                 <div class="col-xs-12 anim-in-down">
                     <h1>{{ record.teamheader }}</h1>
                 </div>
-                <div class="team-wrapper col-sm-4 anim-in-left">
-                    <div class="team-image" style="text-align:center">
-                        <img src="{{ paths.files }}{{ record.teamimage1 }}" alt="">
+                <div class="carousel">
+                    <div class="team-wrapper col-sm-4 anim-in-left">
+                        <div class="team-image" style="text-align:center">
+                            <img src="{{ paths.files }}{{ record.teamimage1 }}" alt="">
+                        </div>
+                        <div class="team-text">{{ record.teamtext1 }}</div>
                     </div>
-                    <div class="team-text">{{ record.teamtext1 }}</div>
-                </div>
-                <div class="team-wrapper col-sm-4 anim-in-up">
-                    <div class="team-image" style="text-align:center">
-                        <img src="{{ paths.files }}{{ record.teamimage2 }}" alt="">
+                    <div class="team-wrapper col-sm-4 anim-in-up">
+                        <div class="team-image" style="text-align:center">
+                            <img src="{{ paths.files }}{{ record.teamimage2 }}" alt="">
+                        </div>
+                        <div class="team-text">{{ record.teamtext2 }}</div>
                     </div>
-                    <div class="team-text">{{ record.teamtext2 }}</div>
-                </div>
-                <div class="team-wrapper col-sm-4 anim-in-right">
-                    <div class="team-image" style="text-align:center">
-                        <img src="{{ paths.files }}{{ record.teamimage3 }}" alt="">
+                    <div class="team-wrapper col-sm-4 anim-in-right">
+                        <div class="team-image" style="text-align:center">
+                            <img src="{{ paths.files }}{{ record.teamimage3 }}" alt="">
+                        </div>
+                        <div class="team-text">{{ record.teamtext3 }}</div>
                     </div>
-                    <div class="team-text">{{ record.teamtext3 }}</div>
                 </div>
             </div>
         </div>
@@ -157,6 +161,7 @@
         <!-- build:js scripts/main.js -->
         <script src="{{ paths.theme }}bower_components/jquery/jquery.js"></script>
         <script src="{{ paths.theme }}bower_components/fullpage.js/jquery.fullpage.min.js"></script>
+        <script src="{{ paths.theme }}scripts/owl.min.js"></script>
         <script src="{{ paths.theme }}scripts/main.js"></script>
         <!-- endbuild -->
 </body>
