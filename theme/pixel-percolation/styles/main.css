@@ -7346,34 +7346,30 @@ body {
   text-align: center;
 }
 .row.fp-section .centered {
-  transition: all 1s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: opacity 1s;
   opacity: 0;
 }
-@media (min-width: 768px) {
-  .row.fp-section .centered {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .row.fp-section .centered div[class*="anim-in-"] {
-    transition: transform 1s ease-out;
-  }
-  .row.fp-section .centered .anim-in-up {
-    transform: translateY(200%);
-  }
-  .row.fp-section .centered .anim-in-down {
-    transform: translateY(-200%);
-  }
-  .row.fp-section .centered .anim-in-left {
-    transform: translateX(-200%);
-  }
-  .row.fp-section .centered .anim-in-right {
-    transform: translateX(200%);
-  }
-  .row.fp-section .centered h1,
-  .row.fp-section .centered h2 {
-    margin-bottom: 1em;
-  }
+.row.fp-section .centered div[class*="anim-in-"] {
+  transition: transform 1s ease-out;
+}
+.row.fp-section .centered .anim-in-up {
+  transform: translateY(200%);
+}
+.row.fp-section .centered .anim-in-down {
+  transform: translateY(-200%);
+}
+.row.fp-section .centered .anim-in-left {
+  transform: translateX(-200%);
+}
+.row.fp-section .centered .anim-in-right {
+  transform: translateX(200%);
+}
+.row.fp-section .centered h1,
+.row.fp-section .centered h2 {
+  margin-bottom: 1em;
 }
 .row.row-hero {
   background-size: cover;
