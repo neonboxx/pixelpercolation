@@ -7690,21 +7690,6 @@ button {
 .team .team-wrapper {
   text-align: center;
 }
-@media (max-width: 768px) {
-  .team .team-wrapper {
-    min-height: 155px;
-    clear: both;
-  }
-  .team .team-wrapper .team-image {
-    width: 100%;
-    max-width: 300px;
-    position: absolute;
-    opacity: 0.5;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
 .about img,
 .team img {
   max-width: 70%;
