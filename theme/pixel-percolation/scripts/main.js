@@ -1,4 +1,6 @@
 'use strict';
+window.scrollTo(0,1);
+
 jQuery(function($) {
     $('#fullpage').fullpage(
         {

@@ -79,8 +79,13 @@ pages:
             label: Contact Sub Header
             type: text
         FooterText:
+            label: Footer text
             type: html
             group: Footer
+            height: 300px
+        footertextmobile:
+            type: html
+            label: Footer text mobile
             height: 300px
         FacebookLink:
             type: text
