@@ -11,7 +11,6 @@ jQuery(function($) {
 
 
 $(function(){
-    $('.slick').slick();
     $('.toggle-nav').click(function(){
         if($('body').hasClass('show-nav')){
             $('body').removeClass('show-nav').addClass('hide-nav');
