@@ -7422,8 +7422,6 @@ body {
   color: #fff;
   background: #323a46;
   background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
   transition: background 1s;
   padding: 0;
 }
@@ -7435,11 +7433,16 @@ body {
 @media (min-width: 768px) {
   .hero.active.fp-section {
     background-size: auto 100%;
+    background-position: center;
+    background-attachment: fixed;
   }
 }
 @media (max-width: 768px) {
   .hero.active.fp-section {
-    background-size: auto 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 .hero .hero-wrapper {

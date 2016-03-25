@@ -1,6 +1,12 @@
 'use strict';
 
 jQuery(function($) {
+    try{
+        document.body.requestFullscreen();    
+    }
+    catch(e){
+        
+    }
     
     window.scrollTo(0,1);
     $('#fullpage').fullpage(

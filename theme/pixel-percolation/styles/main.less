@@ -150,17 +150,21 @@ body {
         background-size: auto 50%;
     }
     background-repeat: no-repeat;
-    background-position: center;
-    background-attachment:fixed;
+   
     transition: background 1s; 
     &.active.fp-section{
         @media(min-width: 768px)
         {
             background-size: auto 100%;
+             background-position: center;
+            background-attachment:fixed;
         }
         @media(max-width: 768px)
         {
-            background-size: auto 100%;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
         }
     }
 
