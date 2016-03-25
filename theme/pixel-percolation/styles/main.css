@@ -7439,12 +7439,12 @@ body {
 }
 @media (max-width: 768px) {
   .hero.active.fp-section {
-    background-size: cover;
+    background-size: auto 100%;
   }
 }
 .hero .hero-wrapper {
   text-align: center;
-  max-width: 900px;
+  width: 100%;
   margin: auto;
   padding-top: 10%;
 }
@@ -7647,6 +7647,9 @@ body {
 .contact .form-control {
   background: #29323C;
   color: #fff;
+}
+.contact .center {
+  top: 45%;
 }
 @media (max-width: 768px) {
   .contact #name-col {

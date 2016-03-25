@@ -1,7 +1,8 @@
 'use strict';
-window.scrollTo(0,1);
 
 jQuery(function($) {
+    
+    window.scrollTo(0,1);
     $('#fullpage').fullpage(
         {
             anchors: ['home', 'about', 'portfolio', 'team', 'contact'],
