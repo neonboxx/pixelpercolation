@@ -28,7 +28,7 @@ $(function(){
         $('body').removeClass('show-nav').addClass('hide-nav');
     });
     if(screen.width <= 768)
-        $(".carousel").owlCarousel({singleItem:true,pagination:true});
+        $(".carousel").owlCarousel({items:1,dots:true,dotsEach:true});
 });
 $(document).keyup(function(e){
     if(e.keyCode==27){
