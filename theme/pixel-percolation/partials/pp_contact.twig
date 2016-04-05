@@ -1,0 +1,103 @@
+{% block form_errors %}
+    {% spaceless %}
+        {% if errors|length > 0 %}
+        <ul class="boltform-error">
+            {% for error in errors %}
+                <li class="boltform-error">{{ error.message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    {% endspaceless %}
+{% endblock form_errors %}
+{% block boltforms_css %}
+<link href="{{ app.paths.extensions }}vendor/bolt/boltforms/css/boltforms.css" rel="stylesheet" type="text/css" />
+{% endblock boltforms_css %}
+
+<div class="boltform">
+{% if debug %}
+    <p class="boltform-error">[Debug] Notification debug mode enabled!</p>
+{% endif %}
+
+{% if error and app.request.get(formname) %}
+    <p class="boltform-error">{{ error }}</p>
+{% endif %}
+
+{% if message and app.request.get(formname) %}
+    <p class="boltform-message">{{ message }}</p>
+{% endif %}
+
+{% if not sent %}
+
+    {{ html_pre }}
+
+    {% if recaptcha.enabled and recaptcha.theme|default('clean') %}
+    <script>
+        var RecaptchaOptions = {
+            theme : '{{ recaptcha.theme }}'
+        };
+    </script>
+    {% endif %}
+
+    {{ form_start(form, {'attr': {'name': formname}}) }}
+        {{ form_errors(form) }}
+<div class="form-group col-xs-12">
+        {% for key, value in fields  %}
+            {% if value.config.name != 'submit' %}
+            <div class="boltforms-row{% if form[key].vars.attr.class is defined %} boltforms-{{ form[key].vars.attr.class }}-row{% endif %}">
+                {{ form_label(form[key]) }}
+                {{ form_errors(form[key]) }}
+                {{ form_widget(form[key]) }}
+            </div>
+            {% endif %}
+        {% endfor %}
+
+        {% if recaptcha.enabled %}
+
+            {% if not recaptcha.valid %}
+            <ul class="boltform-error">
+                <li class="boltform-errors">{{ recaptcha.error_message }}</li>
+            </ul>
+            {% endif %}
+
+            <div class="boltform-row">
+                <label for="form_message" class="required">{{ recaptcha.label|trans({}, translation_domain) }}</label>
+                <script src="https://www.google.com/recaptcha/api.js?hl={{ htmllang() }}" async defer></script>
+                <div class="g-recaptcha" data-sitekey="{{ recaptcha.public_key }}"></div>
+            </div>
+
+        {% endif %}
+
+        <br>
+
+        <div class="boltforms-row{% if form.submit.vars.attr.class is defined %} boltforms-{{ form.submit.vars.attr.class }}-row{% endif %}">
+            {{ form_widget(form.submit) }}
+        </div>
+</div>
+    {{ form_end(form) }}
+
+{% else %}
+    {{ html_post }}
+{% endif %}
+</div>
+
+<!--<div class="form-group col-xs-12">
+        <div id="name-col" class="col-sm-4 col-sm-offset-2">
+            <input type="text" class="form-control" id="inputName" placeholder="Name">
+        </div>
+        <div id="email-col" class="col-sm-4">
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group  col-xs-12">
+        <div class="col-sm-8 col-sm-offset-2">
+            <textarea class="form-control" id="inputMessage" placeholder="Message" rows="6"></textarea>
+        </div>
+    </div>
+    <div class="form-group  col-xs-12 col-sm-6 col-sm-offset-3">
+        <div id="submit-button" class="col-xs-6">
+            <button type="submit" class="btn btn-default">Send</button>
+        </div>
+        <div id="clear-button" class="col-xs-6">
+            <button class="btn btn-default">Clear</button>
+        </div>
+    </div>-->

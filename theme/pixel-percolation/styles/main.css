@@ -7443,13 +7443,13 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-position: center;
   }
 }
 .hero .hero-wrapper {
   text-align: center;
   width: 100%;
   margin: auto;
-  padding-top: 10%;
 }
 .hero .hero-wrapper .hero-logo {
   width: 150px;
