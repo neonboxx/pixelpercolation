@@ -379,14 +379,23 @@ body {
 	right: 125%;
 }
 .contact{
+    label{
+        display: none;
+    }
+    textarea,input{
+        border: none;
+        padding: 5px;
+        margin-bottom: 10px;
+        width:100%;
+    }
     background: #1E2832;
     background-size: cover;
     .form-control{
         background: #29323C;
         color: #fff;
     }
-    .center{
-        top:45%;
+    .centered{
+        top:40% !important;
     }
     @media(max-width: 768px)
     {
@@ -404,18 +413,13 @@ body {
         }
     }
 }
-button{
+#contact_submit{
     width:100%;
     border-radius: 21px !important;
     padding:10px!important;
-}
-#submit-button{
-    padding-left: 7.5px;
-    button{
-        background: #00B8FF;
-        border-color: #00B8FF;
-        color: #fff;   
-    }
+    background: #00B8FF;
+    border: none;
+    color: #fff;   
 }
 #clear-button{
     padding-right: 7.5px;

@@ -67,9 +67,7 @@ uploads:
 #
 # If enabled, ALL forms will go into debug mode.  However, when disabled an individual
 # form can still enable it's own debug — specific for and to that form
-debug:
-  enabled: true  
-  address: noreply@example.com
+
 
 ## Example 1
 #
@@ -83,12 +81,12 @@ contact:
     from_email: email             # A field name, specified in the fields: section below
     replyto_name: name            # A field name, specified in the fields: section below
     replyto_email: email          # A field name, specified in the fields: section below
-    to_name: My Site              # Must be valid text
-    to_email: noreply@example.com # Must be valid email address
-    cc_name: Info Person
-    cc_email: info@example.com
-    bcc_name: Manager Person
-    bcc_email: manager@example.com
+    to_name: Pixel Percolation              # Must be valid text
+    to_email: hello@pixelpercolation.com # Must be valid email address
+    cc_name: 
+    cc_email: 
+    bcc_name: 
+    bcc_email: 
     attach_files: false
   feedback:
     success: Message submission sucessful
@@ -104,6 +102,7 @@ contact:
         label: Name
         attr:
           placeholder: Your name...
+          class: name
         constraints: [ NotBlank, {Length: {'min': 3}} ]
     email:
       type: email
@@ -112,6 +111,7 @@ contact:
         label: Email address
         attr:
           placeholder: Your email...
+          class: email
         constraints: [ NotBlank, Email ]
     message:
       type: textarea
@@ -120,16 +120,13 @@ contact:
         label: Your message
         attr:
           placeholder: Your message...
-          class: myclass
-    needreply:
-      type: choice
-      options:
-        required: false
-        label: Do you want us to contact you back?
-        choices: [ Yes, No ]
-        multiple: false
+          rows: 5
+          class: message
     submit:
       type: submit
+      options:
+        attr:
+            class: submit
 
 ## Example 2
 #

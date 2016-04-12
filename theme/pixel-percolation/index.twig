@@ -98,29 +98,7 @@
                     <h2 class="hidden-xs">{{ record.contactsubheader }}</h2>
                 </div>
                 <div class="anim-in-right">
-                <div class="form-group col-xs-12">
-                            <div id="name-col" class="col-sm-4 col-sm-offset-2">
-                                <input type="text" class="form-control" id="inputName" placeholder="Name">
-                            </div>
-                            <div id="email-col" class="col-sm-4">
-                                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group  col-xs-12">
-                            <div class="col-sm-8 col-sm-offset-2">
-                                <textarea class="form-control" id="inputMessage" placeholder="Message" rows="6"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group  col-xs-12 col-sm-6 col-sm-offset-3">
-                            <div id="submit-button" class="col-xs-6">
-                                <button type="submit" class="btn btn-default">Send</button>
-                            </div>
-                            <div id="clear-button" class="col-xs-6">
-                                <button class="btn btn-default">Clear</button>
-                            </div>
-                        </div>
-                    </form>
-                    <!--{{ boltforms('contact_pp', 'Some text before the form', 'After the form', { textfieldname: "fieldvalue"}) }}-->
+                    {{ boltforms('contact')}}
                 </div>
             </div>
             <div class="col-xs-12 social-buttons">
